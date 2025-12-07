@@ -51,7 +51,7 @@ The LCD screen mounted on the case can be seen here displaying 5 different modal
 
 The customised stacked up water level sensor can be seen below. The first image shows how it is placed inside the bottle and the second image gives a clear image on the stacking of 5 differet individual water level sensors to create a one long one:
 ![Water level inside bottle](https://github.com/user-attachments/assets/06d42fd0-9a40-4c98-a7ae-98a8c051e9e1)
-<img width="149" height="496" alt="Waterlevel_sensor2" src="https://github.com/user-attachments/assets/63aac74b-e611-4125-b1eb-abc71bedab33" />
+<img width="745" height="2480" alt="Waterlevel_sensor2" src="https://github.com/user-attachments/assets/63aac74b-e611-4125-b1eb-abc71bedab33" />
 
 Below the interior of the mechanical casing can be seen. It has securely placed the ATmega328PB, the speaker and the breadboard along with all wirings:
 
@@ -79,7 +79,6 @@ Below are the 3D designs created on Fusion 360 that were used for 3D printing fr
 <img width="469" height="951" alt="Left view" src="https://github.com/user-attachments/assets/6e8650ec-fbae-42bf-b5b6-e18ff919724a" />
 <img width="689" height="956" alt="Back view" src="https://github.com/user-attachments/assets/30cced87-af1f-4381-8c44-a648baa546b7" />
 <img width="581" height="983" alt="Right view" src="https://github.com/user-attachments/assets/ec93c5a8-2908-4e06-9973-e2058d607f51" />
-<img width="413" height="623" alt="Screenshot 2025-12-07 at 3 53 52 PM" src="https://github.com/user-attachments/assets/514eaac0-0cc5-4fe9-8dc5-111727d03456" />
 
 Below is an image of the 3D printed case before any changes were made to the model:
 <img width="289" height="405" alt="3D printed case" src="https://github.com/user-attachments/assets/c6b21fda-8816-4d67-b510-184cfabbe9e2" />
