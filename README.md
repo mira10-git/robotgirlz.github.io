@@ -3,7 +3,7 @@
 * Team Name: RobotGirlz
 * Team Members: Mira Sivaprasad, Catie Robinson, Lubha Churiwala
 * Github Repository URL: https://github.com/upenn-embedded/final-project-f25-f25-final_project_robotgirlz.git
-* Github Pages Website URL: https://ese3500.github.io/final-project-prime-hydration/
+* Github Pages Website URL: https://github.com/mira10-git/robotgirlz.github.io.git
 * Description of hardware: ATmega328PB, MLX90632 FIR temperature sensor, LCD screen, Stemma speaker with audio amplifier, High sensitivity water level sensor, Audio FX Mini Sound Board, Linear Voltage regulator, Red and Blue LED lights
 
 # 1. Abstract
