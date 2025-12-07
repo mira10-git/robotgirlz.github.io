@@ -111,12 +111,21 @@ Below is a Gantt Chart that was followed throughout the project. All milestones 
 
 # 16. Reflections
 
-# 17. Conclusion
+# 17 Future Improvements
+There could be multiple improvements to this project:
+- The mechanical casing can be an enclosed box with a latch system. Such a design would encompass all components without anything been shown outside. This was not implemented in the prototype so that all internal setup could be clearly seen during the demo.
+- We could have prototyped boards. This way all the wiring set up would be customized.
+- There are commercial water level sensors that could be used. It would give more accurate and consistent readings than the customised one that we have used in the prototype. 
+- The temperature readings works best for lower temperature than higher water temperature. So the sensor could be worked on more, in order to recieve better readings even at higher temperatures.
+- The LED strips could be further implemented, as it does not only display two colors, but a range of red/blue could be shown as the temperature varied. 
 
-# 18. Project Proposal Presentation
+# 18. Conclusion
 
-# 19. References
+# 19. Project Proposal Presentation
 
-# 20. Appendix
+
+# 20. References
+
+
 
 
