@@ -75,18 +75,18 @@ The image of the system block diagram can be seen below:
 
 # 10. Mechanical
 Below are the 3D designs created on Fusion 360 that were used for 3D printing from the RPL lab:
-<img width="561" height="918" alt="Front view" src="https://github.com/user-attachments/assets/c167dc75-82b5-4d11-816d-e4238ee88f15" />
-<img width="469" height="951" alt="Left view" src="https://github.com/user-attachments/assets/6e8650ec-fbae-42bf-b5b6-e18ff919724a" />
+<img width="689" height="956" alt="Front view" src="https://github.com/user-attachments/assets/c167dc75-82b5-4d11-816d-e4238ee88f15" />
+<img width="689" height="956" alt="Left view" src="https://github.com/user-attachments/assets/6e8650ec-fbae-42bf-b5b6-e18ff919724a" />
 <img width="689" height="956" alt="Back view" src="https://github.com/user-attachments/assets/30cced87-af1f-4381-8c44-a648baa546b7" />
-<img width="581" height="983" alt="Right view" src="https://github.com/user-attachments/assets/ec93c5a8-2908-4e06-9973-e2058d607f51" />
+<img width="689" height="956" alt="Right view" src="https://github.com/user-attachments/assets/ec93c5a8-2908-4e06-9973-e2058d607f51" />
 
-Below is an image of the 3D printed case before any changes were made to the model:
+Below is an image of the 3D printed case before any changes were made to the model:  
 <img width="289" height="405" alt="3D printed case" src="https://github.com/user-attachments/assets/c6b21fda-8816-4d67-b510-184cfabbe9e2" />
 
-Before the case was spray painted, some design changes were made by cutting certain sections off the case (due to size constraints) from the Garage Lab using a Uni-point Radial Arm Saw. Below is an image of both the case for electrical components and battery case spray painted from the Venture Lab:
+Before the case was spray painted, some design changes were made by cutting certain sections off the case (due to size constraints) from the Garage Lab using a Uni-point Radial Arm Saw. Below is an image of both the case for electrical components and battery case spray painted from the Venture Lab:  
 <img width="190" height="302" alt="Screenshot 2025-12-07 at 3 57 39 PM" src="https://github.com/user-attachments/assets/4bad1dcd-f2b8-4b60-bad3-e82be13ff97d" />
 
-The below image shows the final 3D printed model mounted on top of the bottle comprising of all electrical components, breadboards and wirings inside of the print:
+The below image shows the final 3D printed model mounted on top of the bottle comprising of all electrical components, breadboards and wirings inside of the print:  
 <img width="390" height="467" alt="3D printed model mounted on bottle" src="https://github.com/user-attachments/assets/b2a7cac0-f196-41be-9565-467dc0a5e37d" />
 
 # 11. Project Complexity
