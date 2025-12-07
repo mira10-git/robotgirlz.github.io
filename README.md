@@ -123,7 +123,7 @@ There could be multiple improvements to this project:
 
 # 19. Project Proposal Presentation
 Below is the link used for the Project Proposal Presentation:
-
+https://docs.google.com/presentation/d/1BS_oT94HW1l447_tcnxJzq2WIQPKSj7Fw4KtnmdRAFw/edit?usp=sharing
 
 Below is the link used for the Final Project Presentation:
 https://docs.google.com/presentation/d/1IQ7ptsauxRLAOfhBziD9jSM5K8ZaqktJYuk62H05T6E/edit?usp=share_link
