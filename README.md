@@ -44,14 +44,13 @@ The speaaker fit to the case can be seen below:
 
 The LCD screen mounted on the case can be seen here displaying 5 different modalities can be seen there:
 ![LCD](https://github.com/user-attachments/assets/3ec97cd0-d414-44a0-8bdf-1daf6f5ee1f0)
-<img width="769" height="569" alt="LCD - happy" src="https://github.com/user-attachments/assets/64ad1bbd-d2f0-4358-a85c-94094f36baa2" />
+<img width="1050" height="850" alt="LCD - happy" src="https://github.com/user-attachments/assets/64ad1bbd-d2f0-4358-a85c-94094f36baa2" />
 
 
 
 
 The customised stacked up water level sensor can be seen below. The first image shows how it is placed inside the bottle and the second image gives a clear image on the stacking of 5 differet individual water level sensors to create a one long one:
 ![Water level inside bottle](https://github.com/user-attachments/assets/06d42fd0-9a40-4c98-a7ae-98a8c051e9e1)
-<img width="745" height="2480" alt="Waterlevel_sensor2" src="https://github.com/user-attachments/assets/63aac74b-e611-4125-b1eb-abc71bedab33" />
 
 Below the interior of the mechanical casing can be seen. It has securely placed the ATmega328PB, the speaker and the breadboard along with all wirings:
 
@@ -95,16 +94,27 @@ The below image shows the final 3D printed model mounted on top of the bottle co
 
 
 # 12. Challenges
-Yes, of course we encountered obstacles that we did not anticipate:
-- We went through 3 different set ups to measure water level sensor before we got a customised version working. The individual sensors were glued together with epoxy and they kept coming off, the more testing we did (as they were getting too drenched in water for a prolonged period of time).
-- It was a challenge more than expected to integrate the temperature sensor with the rest of the electrical components. The water level sensor would interrupt with the temperature sensor and force it give incorrect readings initially.
-- The speaker modeule we were using initially was not compatible with the audio driver.
+The team encountered various obstacles that were not anticipated:
+- The team went through 3 different set ups of failure to measure water level sensor before a customised version was finally working. The individual high sensitivity water level sensors were glued together with epoxy. They kept coming off the more number of testing were done (as they were getting too drenched in water for a prolonged period of time).
+- It was a challenge more than expected to integrate the temperature sensor with the rest of the electrical components. The water level sensor would interrupt with the temperature sensor and force it to give incorrect readings initially.
+- The speaker modeule that was used initially was not compatible with the audio driver.
 - The buck-boost converter was faulty and the linear regulator heated up quickly due to the larger step down voltage value.
-- There were multiple versions of the 3D design (that did not fit the purpose of the design) before we finalised on a casing with apt form and function.
+- There were multiple versions of the 3D design (that did not fit the purpose of the design) before the team finalised on a casing with apt form and function.
 
 # 13. Specification Results
-We acheived most of our software requirements such as getting values from waterlevel sensor and temperature sensor. Having the audio files play audible audio according to the display in the LCD which changed at every click of a button. We wanted to have a diplay of a string of color changing LEDs to show if the water was hot or cold. However, this was a tough software implementation as far as bare metal coding was concerned. It would have also added additional pressure on the memory use of the ATmega328PB. So instead, we deliberately used a simplified logic of the same idea and had two individual blue and red LEDs that indicated temperature of the water. Only one of our software requirement was changed. From using a strip of LEDs that changes color to using 2 individual LEDs indicating red for hot water and blue for cold water. The reason this chnage was made was because it was much easier to implement code-wise and much efficient memory-wise.  
 
+SOFTWARE REQUIREMENT SPECIFICATIONS
+Most of the software requirements were achieved. Values were received from the waterlevel sensor and temperature sensor. The audio files were plaing audible audio according to the display in the LCD which changed at every click of a button. There was an intial plan to diplay a string of color changing LEDs to show if the water was hot or cold. However, this was a tough software implementation as far as bare metal coding was concerned. It would have also added additional pressure on the memory use of ATmega328PB. So instead, a simplified logic of the same idea was deliberately use. Two individual blue and red LEDs were used that indicated temperature of the water. Only one of the software requirement was changed. From using a strip of LEDs that changes color to using two individual LEDs indicating red for hot water and blue for cold water. The reason this chnage was made was because it was much easier to implement code-wise and much efficient memory-wise.  
+
+- SRS-01 -> The temperature sensor operates and reports values every 1 second. It reports values in degrees celsius every 100ms. After every few measurements, the sensor gives a bad reading and returns garbage values. This worsens when the device is integrated with all the other components. This problem was fixed by rejecting these bad reads through software implementation.
+- SRS-02 -> The distance sensor operates and reports values no longer than 1 second after an operation interrupt is received. A water level sensor was used to implement the same functionality of the distance sensor and reports values within 1 second due to the timing requirements for the ADC.
+- SRS-03 -> Upon non-trivial temperature change (≥ ±0.5°C), the display will update within 1 second. The display updates the screen within 1 second after the temperature  or water level is reported. Delays longer than this can occur when pesonality is reset and the entire display must update.
+- SRS-04 -> The audio processor shall store and play up to 4 pre-recorded, 10-second audio files, with playback starting ≤1 second after interrupt trigger. The audio processor stores 4 prerecorded audio files, but plays them back up to 2 seconds after the pin is set.
+- SRS-05 -> Color changing LEDs have been removed from the scope of the project.
+- SRS-06 -> The timer period is modifiable through software parameter.
+- SRS-07 -> The system was supposed to log daily total water intake (number of refills) and reset the count at midnight or on power-cycle. It does not do this.
+
+HARDWARE REQUIREMENT SPECIFICATIONS
 We were able to achieve all our hardware requirements. We wired the temperature sensor, customised water level sensor, speaker connected to the audio diver, LCD screen connected to 2 different colored LEDs and a button. For power, we used four 1.5V AA batteries that adds up to 6V. Them, used a linear voltage regulator to step down the voltage to 5V (which was the highest voltage required to power all components). This was then connected to ATmega328PB from where 5V input was delivered to the temperature sensor, LCD screen and speaker attached to the audio driver. The 3.3V input was used to operate the water level sensor. Our requirements did not change much at all. However, we did make slight changes in power regulation. Initially a single 9V battery was connected to a buck-boost convertor to step down voltage. However, the buck-boost convertor in the lab was faulty. This is when we switched to a linear voltage regulator. Since the step-down was from 9V to 5V, it heated up the voltage regulator quickly and it also seemed like a non-efficient set up. At this point, we switched to using four 1.5V batteries, which steps down voltage from 6V to 5V. This power setup was much more efficient and simpler than the earlier one. 
 
 # 14. Evaluation
