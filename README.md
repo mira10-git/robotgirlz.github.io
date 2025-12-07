@@ -36,10 +36,23 @@ This water bottle can be used by users of all age and gender as drinking water i
 https://drive.google.com/file/d/1J3wb_-LD5Ea_SrVyvrk9SyJ9oD1yoAxu/view?usp=share_link
 
 # 6. Images
+The speaaker fit to the case can be seen below:
 ![Speaker_case](https://github.com/user-attachments/assets/9bbd5855-405d-4547-8ac6-8d922fced6c8)
+
+The LCD screen mounted on the case can be seen here displaying 5 different modalities can be seen there:
 ![LCD](https://github.com/user-attachments/assets/3ec97cd0-d414-44a0-8bdf-1daf6f5ee1f0)
+
+
+
+
+The customised stacked up water level sensor can be seen below. The first image shows how it is placed inside the bottle and the second image gives a clear image on the stacking of 5 differet individual water level sensors to create a one long one:
 ![Water level inside bottle](https://github.com/user-attachments/assets/06d42fd0-9a40-4c98-a7ae-98a8c051e9e1)
 
+Below the interior of the mechanical casing can be seen. It has securely placed the ATmega328PB, the speaker and the breadboard along with all wirings:
+
+Below the exterior of the mechanical casing can be seen:
+
+Below the extended battery case taped up to the bottle can be viewed:
 
 # 7. System Block Diagram
 
