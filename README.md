@@ -122,7 +122,11 @@ There could be multiple improvements to this project:
 # 18. Conclusion
 
 # 19. Project Proposal Presentation
+Below is the link used for the Project Proposal Presentation:
 
+
+Below is the link used for the Final Project Presentation:
+https://docs.google.com/presentation/d/1IQ7ptsauxRLAOfhBziD9jSM5K8ZaqktJYuk62H05T6E/edit?usp=share_link
 
 # 20. References
 
