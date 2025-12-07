@@ -72,6 +72,8 @@ The image of the system block diagram can be seen below:
 
 # 9. Electrical
 
+Below is the diagram of the electrical schematic:
+
 
 # 10. Mechanical
 Below are the 3D designs created on Fusion 360 that were used for 3D printing from the RPL lab:
@@ -93,10 +95,17 @@ The below image shows the final 3D printed model mounted on top of the bottle co
 
 
 # 12. Challenges
-
+Yes, of course we encountered obstacles that we did not anticipate:
+- We went through 3 different set ups to measure water level sensor before we got a customised version working. The individual sensors were glued together with epoxy and they kept coming off, the more testing we did (as they were getting too drenched in water for a prolonged period of time).
+- It was a challenge more than expected to integrate the temperature sensor with the rest of the electrical components. The water level sensor would interrupt with the temperature sensor and force it give incorrect readings initially.
+- The speaker modeule we were using initially was not compatible with the audio driver.
+- The buck-boost converter was faulty and the linear regulator heated up quickly due to the larger step down voltage value.
+- There were multiple versions of the 3D design (that did not fit the purpose of the design) before we finalised on a casing with apt form and function.
 
 # 13. Specification Results
+We acheived most of our software requirements such as getting values from waterlevel sensor and temperature sensor. Having the audio files play audible audio according to the display in the LCD which changed at every click of a button. We wanted to have a diplay of a string of color changing LEDs to show if the water was hot or cold. However, this was a tough software implementation as far as bare metal coding was concerned. It would have also added additional pressure on the memory use of the ATmega328PB. So instead, we deliberately used a simplified logic of the same idea and had two individual blue and red LEDs that indicated temperature of the water. Only one of our software requirement was changed. From using a strip of LEDs that changes color to using 2 individual LEDs indicating red for hot water and blue for cold water. The reason this chnage was made was because it was much easier to implement code-wise and much efficient memory-wise.  
 
+We were able to achieve all our hardware requirements. We wired the temperature sensor, customised water level sensor, speaker connected to the audio diver, LCD screen connected to 2 different colored LEDs and a button. For power, we used four 1.5V AA batteries that adds up to 6V. Them, used a linear voltage regulator to step down the voltage to 5V (which was the highest voltage required to power all components). This was then connected to ATmega328PB from where 5V input was delivered to the temperature sensor, LCD screen and speaker attached to the audio driver. The 3.3V input was used to operate the water level sensor. Our requirements did not change much at all. However, we did make slight changes in power regulation. Initially a single 9V battery was connected to a buck-boost convertor to step down voltage. However, the buck-boost convertor in the lab was faulty. This is when we switched to a linear voltage regulator. Since the step-down was from 9V to 5V, it heated up the voltage regulator quickly and it also seemed like a non-efficient set up. At this point, we switched to using four 1.5V batteries, which steps down voltage from 6V to 5V. This power setup was much more efficient and simpler than the earlier one. 
 
 # 14. Evaluation
 
@@ -111,6 +120,7 @@ Below is a Gantt Chart that was followed throughout the project. All milestones 
 
 # 16. Reflections
 
+
 # 17 Future Improvements
 There could be multiple improvements to this project:
 - The mechanical casing can be an enclosed box with a latch system. Such a design would encompass all components without anything been shown outside. This was not implemented in the prototype so that all internal setup could be clearly seen during the demo.
@@ -120,6 +130,7 @@ There could be multiple improvements to this project:
 - The LED strips could be further implemented, as it does not only display two colors, but a range of red/blue could be shown as the temperature varied. 
 
 # 18. Conclusion
+We learnt a lot of things for this project. It helped get more hands on experience doing bare metal coding. We learnt individually about the temperature sensor, water level sensor, speaker and audio driver. We also learnt how to integrate these together using ATmega328PB. We also got some experience in 3D designing and 3D printing. The speaker with an in-built amplifier attached to the audio driver worked the best. There were no complications during any of the testing sessions and the audio were quite audible clearly differentiating between four different personality mode voices. We were particularily proud of implementing the temperature sensor. The sensor was probably one of the most difficult sensors to code from scratch. In addition to it, it was caliberated and validated thoroughly which took additional time. It also took a fair amount of time integrating the temperature sensor with rest of the components. However, putting everything together was very exciting even if it did take significant time and effort. The working of the entire project felt worth the effort. We learnt to work better in a team and delegate work such that contribution of all members were more or less equal. We also learnt to solve conflicts better and reach a middle ground during disputes. Yes, we did have to change our approach multiple times. We changed using LED strips to individual LEDs to indicate water tempemerature. The speaker model was changed to one with an in-built amplifier compatible with the audio driver. A water level sensor was customised instead of using a distance sensor or proximity sensor. We could have modelled a better water level sensor with improved accuracy and lesser challenges with the physical setup.
 
 # 19. Project Proposal Presentation
 Below is the link used for the Project Proposal Presentation:
