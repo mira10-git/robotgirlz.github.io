@@ -9,13 +9,42 @@
 # 1. Abstract
 This page is a brief of the working behind YOUR 'new hydration buddy' - HYROBOT. The bottle reminds the user to drink water if the water level in the bottle has not reduced every hour. It consists of an LCD which gives information such as water temperature and water level. The LCD has 5 different personality modes which can be switched by pressing the button. Along with the LCD, the bottle also has a speaker which gives the user auditory reminder for drinking water. The 5 different modes are: Happy, Sad, Angry, Sassy and Bored. If the user does not wish to have auditory interuptions, the bottle can be set to mode 5 (bored) which is the 'DO NOT DISTURB' mode. When the water temperature is below 30 °C, a blue LED lights up and when the water temperature is above 30°C, the red LED lights up. 
 
-(Picture of the water bottle) 
+# 2. Motivation
 
-# Electrical
+# 3. Goals
 
-# Mechanical
+# 4. Users
 
-# Software
+# 5. Video
 
-# Hardware
+# 6. Images
+
+# 7. System Block Diagram
+
+# 8. Methodology
+
+# 9. Electrical
+
+# 10. Mechanical
+
+# 11. Project Complexity
+
+# 12. Challenges
+
+# 13. Specification Results
+
+# 14. Evaluation
+
+# 15. Timeline
+
+# 16. Reflections
+
+# 17. Conclusion
+
+# 18. Project Proposal Presentation
+
+# 19. References
+
+# 20. Appendix
+
 
