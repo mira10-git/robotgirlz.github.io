@@ -30,10 +30,16 @@ Here's why we are adding the feature of temperature readings to **Hydrobot**, so
 * A switch that lets the user choose their preferred mood (happy, sad, angry, sassy or bored) and if they want the speaker to interact with them or not (so that the bottle does not create any inconvinience in public places)
 
 # 4. Users
+This water bottle can be used by users of all age and gender as drinking water is essential to existing and most people forget to hydrate themselves regularly. In addition to this, we have auditory aid from the speaker and visual aid from the LCD; this could further help differently abled people who are blind and deaf.
 
 # 5. Video
+https://drive.google.com/file/d/1J3wb_-LD5Ea_SrVyvrk9SyJ9oD1yoAxu/view?usp=share_link
 
 # 6. Images
+![Speaker_case](https://github.com/user-attachments/assets/9bbd5855-405d-4547-8ac6-8d922fced6c8)
+![LCD](https://github.com/user-attachments/assets/3ec97cd0-d414-44a0-8bdf-1daf6f5ee1f0)
+![Water level inside bottle](https://github.com/user-attachments/assets/06d42fd0-9a40-4c98-a7ae-98a8c051e9e1)
+
 
 # 7. System Block Diagram
 
