@@ -30,47 +30,81 @@ Here's why we are adding the feature of temperature readings to **Hydrobot**, so
 * A switch that lets the user choose their preferred mood (happy, sad, angry, sassy or bored) and if they want the speaker to interact with them or not (so that the bottle does not create any inconvinience in public places)
 
 # 4. Users
+
 This water bottle can be used by users of all age and gender as drinking water is essential to existing and most people forget to hydrate themselves regularly. In addition to this, we have auditory aid from the speaker and visual aid from the LCD; this could further help differently abled people who are blind and deaf.
 
 # 5. Video
+
 https://drive.google.com/file/d/1J3wb_-LD5Ea_SrVyvrk9SyJ9oD1yoAxu/view?usp=share_link
 
 # 6. Images
+
 The speaaker fit to the case can be seen below:
 ![Speaker_case](https://github.com/user-attachments/assets/9bbd5855-405d-4547-8ac6-8d922fced6c8)
 
 The LCD screen mounted on the case can be seen here displaying 5 different modalities can be seen there:
 ![LCD](https://github.com/user-attachments/assets/3ec97cd0-d414-44a0-8bdf-1daf6f5ee1f0)
+<img width="769" height="569" alt="LCD - happy" src="https://github.com/user-attachments/assets/64ad1bbd-d2f0-4358-a85c-94094f36baa2" />
 
 
 
 
 The customised stacked up water level sensor can be seen below. The first image shows how it is placed inside the bottle and the second image gives a clear image on the stacking of 5 differet individual water level sensors to create a one long one:
 ![Water level inside bottle](https://github.com/user-attachments/assets/06d42fd0-9a40-4c98-a7ae-98a8c051e9e1)
+<img width="149" height="496" alt="Waterlevel_sensor2" src="https://github.com/user-attachments/assets/63aac74b-e611-4125-b1eb-abc71bedab33" />
 
 Below the interior of the mechanical casing can be seen. It has securely placed the ATmega328PB, the speaker and the breadboard along with all wirings:
 
+
 Below the exterior of the mechanical casing can be seen:
+
 
 Below the extended battery case taped up to the bottle can be viewed:
 
+
 # 7. System Block Diagram
+
+The image of the system block diagram can be seen below:
+
 
 # 8. Methodology
 
+
 # 9. Electrical
 
+
 # 10. Mechanical
+Below are the 3D designs created on Fusion 360 that were used for 3D printing from the RPL lab:
+<img width="561" height="918" alt="Front view" src="https://github.com/user-attachments/assets/c167dc75-82b5-4d11-816d-e4238ee88f15" />
+<img width="469" height="951" alt="Left view" src="https://github.com/user-attachments/assets/6e8650ec-fbae-42bf-b5b6-e18ff919724a" />
+<img width="689" height="956" alt="Back view" src="https://github.com/user-attachments/assets/30cced87-af1f-4381-8c44-a648baa546b7" />
+<img width="581" height="983" alt="Right view" src="https://github.com/user-attachments/assets/ec93c5a8-2908-4e06-9973-e2058d607f51" />
+<img width="413" height="623" alt="Screenshot 2025-12-07 at 3 53 52 PM" src="https://github.com/user-attachments/assets/514eaac0-0cc5-4fe9-8dc5-111727d03456" />
+
+Below is an image of the 3D printed case before any changes were made to the model:
+<img width="289" height="405" alt="3D printed case" src="https://github.com/user-attachments/assets/c6b21fda-8816-4d67-b510-184cfabbe9e2" />
+
+Before the case was spray painted, some design changes were made by cutting certain sections off the case (due to size constraints) from the Garage Lab using a Uni-point Radial Arm Saw. Below is an image of both the case for electrical components and battery case spray painted from the Venture Lab:
+<img width="190" height="302" alt="Screenshot 2025-12-07 at 3 57 39 PM" src="https://github.com/user-attachments/assets/4bad1dcd-f2b8-4b60-bad3-e82be13ff97d" />
+
+The below image shows the final 3D printed model mounted on top of the bottle comprising of all electrical components, breadboards and wirings inside of the print:
+<img width="390" height="467" alt="3D printed model mounted on bottle" src="https://github.com/user-attachments/assets/b2a7cac0-f196-41be-9565-467dc0a5e37d" />
 
 # 11. Project Complexity
 
+
 # 12. Challenges
+
 
 # 13. Specification Results
 
+
 # 14. Evaluation
 
+
 # 15. Timeline
+
+Below is a Gantt Chart that was followed throughout the project. All milestones were achieved as per deadlines by the team.
 <img width="2074" height="933" alt="Gantt Chart 1" src="https://github.com/user-attachments/assets/177f7e83-c346-4b68-843c-78a4aff31d4a" />
 <img width="2075" height="856" alt="Gantt Chart 2" src="https://github.com/user-attachments/assets/95cb1f24-ced2-4981-9888-e29c75c4f600" />
 <img width="2128" height="827" alt="Gantt Chart 4" src="https://github.com/user-attachments/assets/feaac036-15cf-4589-8c4f-f01e1b967844" />
