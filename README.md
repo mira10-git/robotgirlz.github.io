@@ -60,8 +60,6 @@ Below the extended battery case taped up to the bottle can be viewed:
 The image of the system block diagram can be seen below:
 ![alt text](WATERBOTTLE BLOCK DIAGRAMfinal.drawio.png)
 
-# 8. Methodology
-
 # 9. Electrical
 
 Below is the diagram of the electrical schematic:
@@ -84,6 +82,8 @@ The below image shows the final 3D printed model mounted on top of the bottle co
 `<img width="390" height="467" alt="3D printed model mounted on bottle" src="https://github.com/user-attachments/assets/b2a7cac0-f196-41be-9565-467dc0a5e37d" />`
 
 # 11. Project Complexity
+
+Despite the seeming simplicity of a smart water bottle, our device is fairly complex, using 2 inputs and 2 outputs that all communicate with one another and the MCU in different ways. We made use of two types of serial communication, I2C and SPI, along with the ATmega328PB's Internal Analog to Digital converter. Additionally, we used an external audio processor to drive the speaker, that communicates with the ATmega328PB via GPIO.
 
 # 12. Challenges
 
@@ -147,14 +147,6 @@ We were able to achieve most our hardware requirements, with some inoptimalities
 
 Our final result is that we create a bottle that gives regular reminders to drink water every hour depending on the water level inside the bottle. We were able to create five different modes: Happy, Sad, Angry, Sassy and Bored. Each mode had a color coded emoji and information display on the LCD. The LCD diplayed information such as the temperature of the bottle and water level. When the temperature of the bottle is >35, the red LED would lit up indicating that the water is hot. Similarily, when the temperature of the bottle id <35, the blue LED would lit up, signifying the water is colder in temperature. Additionally, a speaker with in-built amplifier was used so that the reminder was not only visual but also auditory. These audios were customised in accordance to each personality modes. Since, there are both visual and auditory reminders, this bottle can be additionally helpful for both deaf and blind people. The last mode (bored) is a 'DO NOT DISTURB' mode which means, the speaker will not be playing anything at that time. This mode can be taken advantage of when the user is in public place and do not prefer to be disturbed woth load noices. These personality modes can be changed at a click of a button.
 
-# 15. Timeline
-
-Below is a Gantt Chart that was followed throughout the project. All milestones were achieved as per deadlines by the team.
-`<img width="2074" height="933" alt="Gantt Chart 1" src="https://github.com/user-attachments/assets/177f7e83-c346-4b68-843c-78a4aff31d4a" />`
-`<img width="2075" height="856" alt="Gantt Chart 2" src="https://github.com/user-attachments/assets/95cb1f24-ced2-4981-9888-e29c75c4f600" />`
-`<img width="2128" height="827" alt="Gantt Chart 4" src="https://github.com/user-attachments/assets/feaac036-15cf-4589-8c4f-f01e1b967844" />`
-`<img width="2136" height="951" alt="Gantt Chart 3" src="https://github.com/user-attachments/assets/f44e8db2-7284-43f6-ac57-f95e27c27168" />`
-
 # 16. Future Improvements
 
 There could be multiple improvements to this project:
@@ -207,7 +199,7 @@ There could be multiple improvements to this project:
   - The temperature readings works best for lower temperature than higher water temperature. So the sensor could be worked on more, in order to recieve better readings even at higher temperatures.
   - The LED strips could be further implemented, as it does not only display two colors, but a range of red/blue could be shown as the temperature varied.
 
-# 19. Project Proposal Presentation
+# 18. Project Proposal Presentation
 
 Below is the link used for the Project Proposal Presentation:
 https://docs.google.com/presentation/d/1BS_oT94HW1l447_tcnxJzq2WIQPKSj7Fw4KtnmdRAFw/edit?usp=sharing
@@ -215,4 +207,13 @@ https://docs.google.com/presentation/d/1BS_oT94HW1l447_tcnxJzq2WIQPKSj7Fw4KtnmdR
 Below is the link used for the Final Project Presentation:
 https://docs.google.com/presentation/d/1IQ7ptsauxRLAOfhBziD9jSM5K8ZaqktJYuk62H05T6E/edit?usp=share_link
 
-# 20. References
+
+# 18. Timeline
+
+Below is a Gantt Chart that was followed throughout the project. All milestones were achieved as per deadlines by the team.
+`<img width="2074" height="933" alt="Gantt Chart 1" src="https://github.com/user-attachments/assets/177f7e83-c346-4b68-843c-78a4aff31d4a" />`
+`<img width="2075" height="856" alt="Gantt Chart 2" src="https://github.com/user-attachments/assets/95cb1f24-ced2-4981-9888-e29c75c4f600" />`
+`<img width="2128" height="827" alt="Gantt Chart 4" src="https://github.com/user-attachments/assets/feaac036-15cf-4589-8c4f-f01e1b967844" />`
+`<img width="2136" height="951" alt="Gantt Chart 3" src="https://github.com/user-attachments/assets/f44e8db2-7284-43f6-ac57-f95e27c27168" />`
+
+# 19. References
