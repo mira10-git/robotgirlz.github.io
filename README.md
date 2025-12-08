@@ -97,13 +97,29 @@ Despite the seeming simplicity of a smart water bottle, our device is fairly com
 
 # 12. Challenges
 
-The team encountered various obstacles that were not anticipated:
+The team encountered many obstacles that we did not anticipate:
 
-- The team went through 3 different set ups of failure to measure water level sensor before a customised version was finally working. The individual high sensitivity water level sensors were glued together with epoxy. They kept coming off the more number of testing were done (as they were getting too drenched in water for a prolonged period of time).
-- It was a challenge more than expected to integrate the temperature sensor with the rest of the electrical components. The water level sensor would interrupt with the temperature sensor and force it to give incorrect readings initially.
-- The speaker modeule that was used initially was not compatible with the audio driver.
+* It was a challenge to integrate the temperature sensor with the rest of the electrical components. The water level sensor would interrupt with the temperature sensor and force it give incorrect readings initially.
+
+- We went through 3 different set ups to measure water level sensor before we got a customised version working. The individual sensors were glued together with epoxy and they kept coming off with the different kind of testing we did (as the prolonged exposure to warm/hot water softened the glue).
+- The speaker module we were using initially was not compatible with the audio driver.
 - The buck-boost converter was faulty and the linear regulator heated up quickly due to the larger step down voltage value.
-- There were multiple versions of the 3D design (that did not fit the purpose of the design) before the team finalised on a casing with apt form and function.
+- There were multiple versions of the 3D design (that did not fit the purpose of the design) before we finalised on a casing with apt form and function.
+
+Due to these challenges along with many other factors like time and feasibility, component compatability and information availability, we did have to change our approach to a few functionalities multiple times.
+
+*  We changed from using neopixel LED strips to individual LEDs to indicate water temperature. This was due to the complexity of the LED strips communication proccess that would have taken too much time that was better spent improving other parts of the device.
+
+* The speaker model was changed to one with an in-built amplifier to simplify the design instead of the two separate amplifiers required to boost the signal enough for the original 5W speaker.
+* Most notably, our approach to sensing the water level completely changed from a distance based sensor to a stack of 2-inch resistive waterlevel sensors.
+
+  1. This change was initialy due to our first chosen part having intentionally incomplete documentation, due to the part manufacturers wanting the user to only implement the device using their API library to guarantee quality. This made it near impossible to write the necessary I2C code for the device.
+  2. From here, our first back up plan was to use the ultrasonic sensor we had experience with from class.
+     This however also did not work for our application, as the field of view of the ultrasonic sensor was too wide for the water bottle. It would sense the walls of the water botle before the water.
+  3. After these, we looked into how typical resistive water level sensors operated.
+     We had initially avoided many of these parts during our initial proposal because of their size, either being too big to fit in our initial bottle choice or too short for the length of the bottle.
+     We looked into multiple options from here: a load sensor that communicated through I2C, two homemade water level sensor deisgns, and the two in-factory made water level sensor.
+  4. From here we went with this final option since it had the most consistent behavior that we could implement in the remaining time we had. It took some more effort than anticipated, but we eventually got it working where it would return values reasonable for the set up.
 
 # 13. Results
 
@@ -161,10 +177,10 @@ There could be multiple improvements to this project:
 
 - The mechanical casing can be an enclosed box with a latch system. Such a design would encompass all components without anything been shown outside. This was not implemented in the prototype so that all internal setup could be clearly seen during the demo.
 - We could soldered down the device on protoboards, to prevent loose wiring.
-- Obviously, a single water level sensor the length of the bottle could be used to give more accurate and consistent readings than the customised one that we have used in the prototype.
+- A single water level sensor the length of the bottle could be used to give more accurate and consistent readings than the customised one that we have used in the prototype.
 - The temperature readings works best for lower temperature than higher water temperature. Increasing the robustness of the code (taking and averaging entire measurement tables opposed to taking one reading at a time) and further waterproofing of the sensor set up itself would improve the performance of the temperature readings.
 - The LED strips could be further implemented, as it does not only display two colors, but a range of red/blue could be shown as the temperature varied.
-- A switch to power on the device could be implemented to avoid th edelicate process of of plugging and unplugging wires every time the device is turned on.
+- A switch to power on the device could be implemented to avoid the delicate process of of plugging and unplugging wires every time the device is turned on.
 
 # 17. Reflection and Conclusions
 
@@ -177,35 +193,6 @@ There could be multiple improvements to this project:
   We were particularily proud of implementing the temperature sensor. Since it communicated through I2C,it required a lot of firmware implementation specific to the part itself. It took a lot of time to research, write code for, and test the necessary initializations, calibrations, and measurement start parameters, along with the firmware required to turn the raw data from the sensor into information that was interpretable. The temperature sensor took to most time to intergate with other parts, because the lack of an expected acknowledgement from the peripheral would hang up the entire application function. It was very rewarding when we figured out what was going on and got everything to work (code will get hung up waiting for an ACK if we did not have our I2C peripherals plugged in). Aside from the temperature sensor, finally putting everything together was very exciting even if it did take significant time and effort. The working of the entire project felt worth the effort.
 * **What did you learn/gain from this experience?**
   In addition to the general practice applying what we learned in the course, we also learned how executing a project like this takes a lot of time, trial and error, testing, and adapting and overcoming the inevitable obstacles along the way. We learnt how we can approach the same problem in multiple ways. For example, we tried many different methods to measure the level of the water inside the bottle. This showed us that it is okay not to be stuck if the original plan did not work out, and that we can improvise when needed.
-* **Did you have to change your approach?**
-  Yes, due to many factors like time and feasibility, component compatability and information availability, we did have to change our approach to a few functionalities multiple times.
-  * We changed from using neopixel LED strips to individual LEDs to indicate water temperature. This was due to the complexity of the LED strips communication proccess that would have taken too much time that was better spent improving other parts of the device.
-  * The speaker model was changed to one with an in-built amplifier to simplify the design instead of the two separate amplifiers required to boost the signal enough for the original 5W speaker.
-  * Most notably, our approach to sensing the water level completely changed from a distance based sensor to a stack of 2-inch resistive waterlevel sensors.
-
-    1. This change was initialy due to our first chosen part having intentionally incomplete documentation, due to the part manufacturers wanting the user to only implement the device using their API library to guarantee quality. This made it near impossible to write the necessary I2C code for the device.
-    2. From here, our first back up plan was to use the ultrasonic sensor we had experience with from class.
-       This however also did not work for our application, as the field of view of the ultrasonic sensor was too wide for the water bottle. It would sense the walls of the water botle before the water.
-    3. After these, we looked into how typical resistive water level sensors operated.
-       We had initially avoided many of these parts during our initial proposal because of their size, either being too big to fit in our initial bottle choice or too short for the length of the bottle.
-       We looked into multiple options from here: a load sensor that communicated through I2C, two homemade water level sensor deisgns, and the two in-factory made water level sensor.
-    4. From here we went with this final option since it had the most consistent behavior that we could implement in the remaining time we had. It took some more effort than anticipated, but we eventually got it working where it would return values reasonable for the set up.
-* **What could have been done differently?**
-  The final water level sensor implementation could have gone a lot differently. We could have continued researching other options or ordered different back up plan that would have avoid the floating charge errors we get now, but for the options and time we had our design is reasonable. A different water level set up would also avoid the issues of the waterlevel sensor blocking the temperature sensor when taking its readings.
-* **Did you encounter obstacles that you didn’t anticipate?**
-  Yes, we encountered obstacles that we did not anticipate:
-  - It was a challenge to integrate the temperature sensor with the rest of the electrical components. The water level sensor would interrupt with the temperature sensor and force it give incorrect readings initially.
-  - We went through 3 different set ups to measure water level sensor before we got a customised version working. The individual sensors were glued together with epoxy and they kept coming off with the different kind of testing we did (as the prolonged exposure to warm/hot water softened the glue).
-  - The speaker module we were using initially was not compatible with the audio driver.
-  - The buck-boost converter was faulty and the linear regulator heated up quickly due to the larger step down voltage value.
-  - There were multiple versions of the 3D design (that did not fit the purpose of the design) before we finalised on a casing with apt form and function.
-* **What could be a next step for this project?**
-  There could be multiple improvements to this project:
-  - The mechanical casing can be an enclosed box with a latch system. Such a design would encompass all components without anything been shown outside. This was not implemented in the prototype so that all internal setup could be clearly seen during the demo.
-  - We could have prototyped boards. This way all the wiring set up would be customized.
-  - There are commercial water level sensors that could be used. It would give more accurate and consistent readings than the customised one that we have used in the prototype.
-  - The temperature readings works best for lower temperature than higher water temperature. So the sensor could be worked on more, in order to recieve better readings even at higher temperatures.
-  - The LED strips could be further implemented, such that it displays a range of colors. For example, a range of red/blue could be shown as the temperature varied.
 
 # 18. Project Proposal Presentation
 
