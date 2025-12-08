@@ -35,7 +35,7 @@ This water bottle can be used by users of all age and gender as drinking water i
 
 # 5. Video
 
-Below is the video for the entire working of **HYDROBOT**
+Below is the video for the entire working of **HYDROBOT**  
 [![Demo](https://img.youtube.com/vi/l-nTQFhP8W4/0.jpg)](https://youtu.be/l-nTQFhP8W4)
 
 # 6. Images
