@@ -38,10 +38,11 @@ This water bottle can be used by users of all age and gender as drinking water i
 Below is the video for the entire working of **HYDROBOT**  
 [![Demo](https://img.youtube.com/vi/l-nTQFhP8W4/0.jpg)](https://youtu.be/l-nTQFhP8W4)
 
+
 # 6. Images
 
-The speaker fit to the case can be seen below:
-`<img width="190" height="302" alt="Screenshot 2025-12-07 at 3 57 39 PM" src="/Users/mirasivaprasad/Desktop/robotgirlz.github.io/images/Speaker_case.jpeg" />`
+The speaker fit to the case can be seen below:  
+<img src="https://github.com/user-attachments/assets/fe76689c-87b3-492b-8924-e1830d71ecfd" width="284" height="1712">
 
 The LCD screen mounted on the case can be seen here displaying 5 different modalities can be seen there:
 <p style="display: flex; justify-content: center; gap: 30px;">
@@ -51,16 +52,9 @@ The LCD screen mounted on the case can be seen here displaying 5 different modal
 </p>
 
 <p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images\LCD.jp" width="250">
-  <img src="images\LCD%-happy.png)" width="250">
+  <img src="images/LCD.jpg" width="700" height="1000">
+  <img src="images/LCD - happy.png)" width="250">
 </p>
-
-Bored -
-![alt text](images\LCD.jpg)
-
-Happy -
-![alt text](images\LCD%-happy.png)
-
 
 The temperature sensor placed inside the bottle cap can be viewed here:
 ![alt text](images/tempinsidecap.jpeg)
