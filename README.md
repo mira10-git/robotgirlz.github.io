@@ -41,23 +41,26 @@ Below is the video for the entire working of **HYDROBOT**
 # 6. Images
 
 The speaker fit to the case can be seen below:
-![alt text](images\Speaker_case.jpeg)
+`<img width="190" height="302" alt="Screenshot 2025-12-07 at 3 57 39 PM" src="/Users/mirasivaprasad/Desktop/robotgirlz.github.io/images/Speaker_case.jpeg" />`
 
 The LCD screen mounted on the case can be seen here displaying 5 different modalities can be seen there:
+<p style="display: flex; justify-content: center; gap: 30px;">
+  <img src="images/wink.jpeg" width="250">
+  <img src="images/sad.jpeg" width="250">
+  <img src="images/angry.jpeg" width="250">
+</p>
+
+<p style="display: flex; justify-content: center; gap: 30px;">
+  <img src="images\LCD.jp" width="250">
+  <img src="images\LCD%-happy.png)" width="250">
+</p>
+
 Bored -
 ![alt text](images\LCD.jpg)
 
 Happy -
 ![alt text](images\LCD%-happy.png)
 
-Sad -
-![alt text](images/sad.jpeg)
-
-Angry -
-![alt text](images/angry.jpeg)
-
-Sassy -
-![alt text](images/wink.jpeg)
 
 The temperature sensor placed inside the bottle cap can be viewed here:
 ![alt text](images/tempinsidecap.jpeg)
