@@ -35,20 +35,33 @@ This water bottle can be used by users of all age and gender as drinking water i
 
 # 5. Video
 
-Below is the video for the entire working of **HYDROBOT**  
+Below is the video for the entire working of **HYDROBOT**
 [![Demo](https://img.youtube.com/vi/l-nTQFhP8W4/0.jpg)](https://youtu.be/l-nTQFhP8W4)
 
 # 6. Images
 
 The speaker fit to the case can be seen below:
+
 ![alt text](images\Speaker_case.jpeg)
 
 The LCD screen mounted on the case can be seen here displaying 5 different modalities can be seen there:
+
 ![alt text](images\LCD.jpg)
-![alt text](images\LCD - happy.png)
 
+Happy 
 
+![alt text](images\LCD%-happy.png)
+
+Sad 
+![alt text](images/sad.jpeg)
+
+angry 
+![alt text](images/angry.jpeg)
+
+Sassy
+![alt text](images/wink.jpeg)
 The temperature sensor placed inside the bottle cap can be viewed here:
+![alt text](images/tempinsidecap.jpeg)
 
 The customised stacked up water level sensor can be seen below. The first image shows how it is placed inside the bottle and the second image gives a clear image on the stacking of 5 differet individual water level sensors to create a one long one:
 
@@ -56,25 +69,29 @@ The customised stacked up water level sensor can be seen below. The first image 
 
 ![alt text](images\Waterlevel_sensor2.png)
 
-Below the interior of the mechanical casing can be seen.
-![text](images/interiorcase1.jpeg) 
+Below the interior of the mechanical casing can be seenIt has securely placed the ATmega328PB, the speaker and the breadboard along with all wirings:
+![text](images/interiorcase1.jpeg)
 ![text](images/interiorcase2.jpeg)
-
-It has securely placed the ATmega328PB, the speaker and the breadboard along with all wirings:
 
 Below the exterior of the mechanical casing can be seen:
 ![alt text](images/caseoutside.jpeg)
 Below the extended battery case taped up to the bottle can be viewed:
 ![alt text](images/batterypack.jpeg)
+
 # 7. System Block Diagram
 
 The image of the system block diagram can be seen below:
-![alt text](WATERBOTTLE BLOCK DIAGRAMfinal.drawio.png)
+![alt text](images/WATERBOTTLE%20BLOCK%20DIAGRAM.drawio.png)
+
+Confirmation of the audio timing is seen here:
+![alt text](images/audiotiming.jpeg)
+
+
 
 # 9. Electrical
 
 Below is the diagram of the electrical schematic:
-<img width="734" height="633" alt="Updated Schematic" src="https://github.com/user-attachments/assets/00b5c368-4b01-4b8f-8d57-d7c6cf263b0b" />
+`<img width="734" height="633" alt="Updated Schematic" src="https://github.com/user-attachments/assets/00b5c368-4b01-4b8f-8d57-d7c6cf263b0b" />`
 
 # 10. Mechanical
 
@@ -110,8 +127,7 @@ The team encountered many obstacles that we did not anticipate:
 
 Due to these challenges along with many other factors like time and feasibility, component compatability and information availability, we did have to change our approach to a few functionalities multiple times.
 
-*  We changed from using neopixel LED strips to individual LEDs to indicate water temperature. This was due to the complexity of the LED strips communication proccess that would have taken too much time that was better spent improving other parts of the device.
-
+* We changed from using neopixel LED strips to individual LEDs to indicate water temperature. This was due to the complexity of the LED strips communication proccess that would have taken too much time that was better spent improving other parts of the device.
 * The speaker model was changed to one with an in-built amplifier to simplify the design instead of the two separate amplifiers required to boost the signal enough for the original 5W speaker.
 * Most notably, our approach to sensing the water level completely changed from a distance based sensor to a stack of 2-inch resistive waterlevel sensors.
 
@@ -151,8 +167,8 @@ Most of the software requirements were achieved. Values were received from the w
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | *SRS-01* | The temperature sensor shall operate and report values every 1 second.                                                                 | INSERT PIC OF THE LOGIC ANALYZER TAKING MEASUREMENTS IN TIME<br />Confirmed. The IR temperature sensor starts and completes the 3 measurements necessary for an object temperature reading in < 100ms.                                                                                                                                                                                |
 | *SRS-02* | The water level sensor shall operate and report values no longer than 1 second after the opateration starts .                         | Confirmed. The analog water level sensors are continuously providing an input voltage to the ADC. Since the ATmega328PB's ADC is already enabled in single conversion mode after initialization mode, each ADC reading takes only takes 13 clock cycles, or 1.04ms from a 12.5kHz clock frequency (16Mhz with a 128 prescaler), making the enitre waterlevel reading procedure take < |
-| *SRS-03* | Upon non-trivial temperature change (≥ ±0.5°C), the display shall update within 1 second.                                           | Confirmed. The LCD screen updates at least twice every time the processor cycles though our main while loop taking 3.17 seconds.                                                                                                                                                                                                                                                               |
-| *SRS-04* | The audio processor shall store and play up to 4 pre-recorded 10-second audio files, with playback starting ≤1 second after trigger. | Confirmed. a signal comes through the speaker at 180ms after GPIO trigger TAKE PIC                                                                                                                                                                                                                                                                                                      |
+| *SRS-03* | Upon non-trivial temperature change (≥ ±0.5°C), the display shall update within 1 second.                                           | Confirmed. The LCD screen updates at least twice every time the processor cycles though our main while loop taking 3.17 seconds.                                                                                                                                                                                                                                                       |
+| *SRS-04* | The audio processor shall store and play up to 4 pre-recorded 10-second audio files, with playback starting ≤1 second after trigger. | Confirmed. a signal comes through the speaker at 180ms after GPIO trigger TAKE PIC                                                                                                                                                                                                                                                                                                     |
 | *SRS-05* | When the received temperature enters a new range (cold/normal/hot), the LED color shall change within 1 second.                        | Confirmed. When the temperature changes the LED color updates on the next cylces of our while loop (the loop may take longer )                                                                                                                                                                                                                                                         |
 | *SRS-06* | The reminder timer shall be user-adjustable between 30–90 minutes through a simple switch or software parameter.                      | Confirmed. The timer period can be adjusted through the software parameter called ""PERIOD""                                                                                                                                                                                                                                                                                           |
 | *SRS-07* | The system shall log daily total water intake (number of refills) and reset the count at midnight or on power-cycle.                   | Unconfirmed. The size of our water bottle made this functionality unreasonable.                                                                                                                                                                                                                                                                                                        |
