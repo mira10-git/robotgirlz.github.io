@@ -110,10 +110,13 @@ Below is the diagram of the electrical schematic:
 
 Below are the 3D designs created on Fusion 360 that were used for 3D printing from the RPL lab:
 <p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/FrontView.png" width="460">
-  <img src="images/BackView.png" width="544">
-  <img src="images/LeftView.png" width="455">
-  <img src="images/RightView.png" width="547">
+  <img src="images/FrontView.png" width="260">
+  <img src="images/LeftView.png" width="255">
+</p>
+
+<p style="display: flex; justify-content: center; gap: 30px;">
+  <img src="images/BackView.png" width="344">
+  <img src="images/RightView.png" width="347">
 </p>
 
 Below is an image of the 3D printed case before any changes were made to the model:
@@ -248,6 +251,9 @@ Below is a Gantt Chart that was followed throughout the project. All milestones 
 <p style="display: flex; justify-content: center; gap: 30px;">
   <img src="images/GanttChart1.png" width="800">
   <img src="images/GanttChart2.png" width="800">
+</p>
+
+<p style="display: flex; justify-content: center; gap: 30px;">
   <img src="images/GanttChart3.png" width="800">
   <img src="images/GanttChart4.png" width="800">
 </p>
