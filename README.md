@@ -43,16 +43,16 @@ Below is the video for the entire working of **HYDROBOT**
 The speaker fit to the case can be seen below:
 `<img src="https://github.com/user-attachments/assets/fe76689c-87b3-492b-8924-e1830d71ecfd" width="284" height="1712">`
 
-The LCD screen mounted on the case can be seen here displaying 5 different modalities can be seen there:
+The LCD screen mounted on the case displaying 5 different modalities can be seen here:
 
-The below two images are bored (DND mode) and happy (default mode)
+The below two images are bored (DND mode) and happy (default mode) -
 
 <p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/LCD.jpg" width="680" height="1000">
+  <img src="images/LCD.jpg" width="680">
   <img src="images/LCD_happy.png" width="310">
 </p>
 
-The below three images are the other addiitonal modalities
+The below three images are the other addiitonal modalities - 
 
 <p style="display: flex; justify-content: center; gap: 30px;">
   <img src="images/wink.jpeg" width="330">
@@ -63,7 +63,7 @@ The below three images are the other addiitonal modalities
 The temperature sensor placed inside the bottle cap can be viewed here:
 `<img src="images/tempinsidecap.jpeg" width="284" height="1712">`
 
-The customised stacked up water level sensor can be seen below. The first image shows how it is placed inside the bottle and the second image gives a clear image on the stacking of 5 different individual water level sensors to create a one long one:
+The customised stacked up water level sensor can be seen below. The first image shows how it is placed inside the bottle and the second image gives a picture on the stacking of five different individual water level sensors to create a new long one:
 `<img src="images/Waterlevel_sensor1.jpeg" width="284" height="1712">`
 `<img src="images/Waterlevel_sensor2.png" width="105" height="912">`
 
@@ -72,10 +72,10 @@ Below the interior of the mechanical casing can be seen. It has securely placed 
 <p style="display: flex; justify-content: center; gap: 30px;">
   <img src="images/interiorcase1.jpeg" width="300">
   <img src="images/interiorcase2.jpeg" width="300">
-  <img src="images/zip_ties.jpeg" width="300">
+  <img src="images/zip_ties.jpeg.jpeg" width="300">
 </p>
 
-Below the exterior of the mechanical casing can be seen:
+Below the exterior of the mechanical casing can be seen. The casing is spray painted with red color to match with the color of the breadboards used so that everything fits into a theme color:
 
 <p style="display: flex; justify-content: center; gap: 30px;">
   <img src="images/caseoutside.jpeg" width="225">
@@ -84,8 +84,8 @@ Below the exterior of the mechanical casing can be seen:
   <img src="images/Outer_casing3.jpeg" width="225">
 </p>
 
-Below the extended battery case taped up to the bottle can be viewed:
-`<img src="images/batterypack.jpeg" width="284" height="1712">`
+Below the extended battery case taped up to the bottle can be viewed:  
+
 
 # 7. System Block Diagram
 
