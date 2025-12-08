@@ -73,7 +73,12 @@ Below the interior of the mechanical casing can be seen. It has securely placed 
 </p>
 
 Below the exterior of the mechanical casing can be seen:  
-![alt text](images/caseoutside.jpeg)
+<p style="display: flex; justify-content: center; gap: 30px;">
+  <img src="images/caseoutside.jpeg" width="225">
+  <img src="images/Outer_casing1.jpeg" width="225">
+  <img src="images/Outer_casing2.jpeg" width="225">
+  <img src="images/Outer_casing3.jpeg" width="225">
+</p>
 
 Below the extended battery case taped up to the bottle can be viewed:  
 <img src="images/batterypack.jpeg" width="284" height="1712">
