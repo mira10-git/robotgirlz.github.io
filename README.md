@@ -42,6 +42,12 @@ Below is the video for the entire working of **HYDROBOT**
 
 # 6. Images
 
+FINAL PRODUCT 
+<p style="display: flex; justify-content: center; gap: 30px;">
+  <img src="squarepicofall.jpeg" width="400">
+</p>
+
+
 The speaker fit to the case can be seen below:
 <p style="display: flex; justify-content: center; gap: 30px;">
   <img src="images/speakercase.jpeg" width="310">
@@ -226,7 +232,7 @@ Due to changes in our design we had to change a couple of our hardware requireme
 | HRS-04 | A bright display shall display water temperature and amount of water drank legibly under typical indoor lighting                                                                                                      | Confirmed. The screen is bright and visible. The image confirming this can be seen below.                                                                                                                                                                                                                                                                                                                                   |
 | HRS-05 | ATMega328PB should operate within its specified voltage range, that is 3.3 V-5V. It should be able to send display signals to the display screen via SPI.                                                             | Confirmed. The ATmega is able to operate this way via battery power                                                                                                                                                                                                                                                                                                                                                                             |
 | HRS-06 | Power supply should be suffient to run the peripherals (temperature sensor, water level sensor, display screen, ATMega328PB) continuously without interruption for atleast 4 hours.                                   | Confirmed. The system was left on for an afternoon and still operated normally throughout.                                                                                                                                                                                                                                                                                                                                                      |
-| HRS-07 | Water bottle should be made of metal and it should be able to withstand both hot water (up to 60°C) and cold water (till 0°C) without deformation or leakage.                                                       | Unconfirmed. The water bottle is plastic, but its still able to withstand the range of water temperature.                                                                                                                                                                                                                                                                                                                                       |
+| HRS-07 | Water bottle should be able to withstand both hot water (up to 60°C) and cold water (till 0°C) without deformation or leakage.                                                       | Unconfirmed. The water bottle is plastic, but its still able to withstand the range of water temperature.                                                                                                                                                                                                                                                                                                                                       |
 
 
 ### HRS images 
