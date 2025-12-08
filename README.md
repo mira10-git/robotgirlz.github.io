@@ -77,16 +77,16 @@ Below the interior of the mechanical casing can be seen. It has securely placed 
 <p style="display: flex; justify-content: center; gap: 30px;">
   <img src="images/interiorcase1.jpeg" width="300">
   <img src="images/interiorcase2.jpeg" width="300">
-  <img src="images/zip_ties.jpeg" width="300">
+  <img src="images/zipties.jpeg" width="300">
 </p>
 
 Below the exterior of the mechanical casing can be seen. The casing is spray painted with red color to match with the color of the breadboards used so that everything fits into a theme color:
 
 <p style="display: flex; justify-content: center; gap: 30px;">
   <img src="images/caseoutside.jpeg" width="225">
-  <img src="images/Outer_casing1.jpeg" width="225">
-  <img src="images/Outer_casing2.jpeg" width="225">
-  <img src="images/Outer_casing3.jpeg" width="225">
+  <img src="images/OuterCasing1.jpeg" width="225">
+  <img src="images/OuterCasing2.jpeg" width="225">
+  <img src="images/OuterCasing3.jpeg" width="225">
 </p>
 
 Below the extended battery case taped up to the bottle can be viewed:  
@@ -103,14 +103,19 @@ The image of the system block diagram can be seen below:
 
 Below is the diagram of the electrical schematic:
 <p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/tempinsidecap.jpeg" width="734">
+  <img src="images/UpdatedSchematic.png" width="734">
 </p>
-
-`<img width="734" height="633" alt="Updated Schematic" src="https://github.com/user-attachments/assets/00b5c368-4b01-4b8f-8d57-d7c6cf263b0b" />`
 
 # 10. Mechanical
 
 Below are the 3D designs created on Fusion 360 that were used for 3D printing from the RPL lab:
+<p style="display: flex; justify-content: center; gap: 30px;">
+  <img src="images/caseoutside.jpeg" width="225">
+  <img src="images/Outer_casing1.jpeg" width="225">
+  <img src="images/Outer_casing2.jpeg" width="225">
+  <img src="images/Outer_casing3.jpeg" width="225">
+</p>
+
 `<img width="689" height="956" alt="Front view" src="https://github.com/user-attachments/assets/c167dc75-82b5-4d11-816d-e4238ee88f15" />`
 `<img width="689" height="956" alt="Left view" src="https://github.com/user-attachments/assets/6e8650ec-fbae-42bf-b5b6-e18ff919724a" />`
 `<img width="689" height="956" alt="Back view" src="https://github.com/user-attachments/assets/30cced87-af1f-4381-8c44-a648baa546b7" />`
