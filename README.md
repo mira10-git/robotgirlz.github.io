@@ -110,16 +110,11 @@ Below is the diagram of the electrical schematic:
 
 Below are the 3D designs created on Fusion 360 that were used for 3D printing from the RPL lab:
 <p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/caseoutside.jpeg" width="225">
-  <img src="images/Outer_casing1.jpeg" width="225">
-  <img src="images/Outer_casing2.jpeg" width="225">
-  <img src="images/Outer_casing3.jpeg" width="225">
+  <img src="images/GanttChart1.png" width="500">
+  <img src="images/GanttChart2.png" width="500">
+  <img src="images/GanttChart3.png" width="500">
+  <img src="images/GanttChart4.png" width="500">
 </p>
-
-`<img width="689" height="956" alt="Front view" src="https://github.com/user-attachments/assets/c167dc75-82b5-4d11-816d-e4238ee88f15" />`
-`<img width="689" height="956" alt="Left view" src="https://github.com/user-attachments/assets/6e8650ec-fbae-42bf-b5b6-e18ff919724a" />`
-`<img width="689" height="956" alt="Back view" src="https://github.com/user-attachments/assets/30cced87-af1f-4381-8c44-a648baa546b7" />`
-`<img width="689" height="956" alt="Right view" src="https://github.com/user-attachments/assets/ec93c5a8-2908-4e06-9973-e2058d607f51" />`
 
 Below is an image of the 3D printed case before any changes were made to the model:
 `<img width="289" height="405" alt="3D printed case" src="https://github.com/user-attachments/assets/c6b21fda-8816-4d67-b510-184cfabbe9e2" />`
@@ -244,10 +239,12 @@ https://docs.google.com/presentation/d/1IQ7ptsauxRLAOfhBziD9jSM5K8ZaqktJYuk62H05
 # 18. Timeline
 
 Below is a Gantt Chart that was followed throughout the project. All milestones were achieved as per deadlines by the team.
-`<img width="2074" height="933" alt="Gantt Chart 1" src="https://github.com/user-attachments/assets/177f7e83-c346-4b68-843c-> pre78a4aff31d4a" />`
-`<img width="2075" height="856" alt="Gantt Chart 2" src="https://github.com/user-attachments/assets/95cb1f24-ced2-4981-9888-e29c75c4f600" />`
-`<img width="2128" height="827" alt="Gantt Chart 4" src="https://github.com/user-attachments/assets/feaac036-15cf-4589-8c4f-f01e1b967844" />`
-`<img width="2136" height="951" alt="Gantt Chart 3" src="https://github.com/user-attachments/assets/f44e8db2-7284-43f6-ac57-f95e27c27168" />`
+<p style="display: flex; justify-content: center; gap: 30px;">
+  <img src="images/GanttChart1.png" width="800">
+  <img src="images/GanttChart2.png" width="800">
+  <img src="images/GanttChart3.png" width="800">
+  <img src="images/GanttChart4.png" width="800">
+</p>
 
 # 19. References
 
