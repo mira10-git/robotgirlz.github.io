@@ -42,7 +42,7 @@ Below is the video for the entire working of **HYDROBOT**
 
 The speaker fit to the case can be seen below:
 <p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/Speaker_case.jpeg" width="310">
+  <img src="images/SpeakerCase.jpeg" width="310">
 </p>
 
 The LCD screen mounted on the case displaying 5 different modalities can be seen here:
@@ -110,10 +110,10 @@ Below is the diagram of the electrical schematic:
 
 Below are the 3D designs created on Fusion 360 that were used for 3D printing from the RPL lab:
 <p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/GanttChart1.png" width="500">
-  <img src="images/GanttChart2.png" width="500">
-  <img src="images/GanttChart3.png" width="500">
-  <img src="images/GanttChart4.png" width="500">
+  <img src="images/FrontView.png" width="460">
+  <img src="images/BackView.png" width="544">
+  <img src="images/LeftView.png" width="455">
+  <img src="images/RightView.png" width="547">
 </p>
 
 Below is an image of the 3D printed case before any changes were made to the model:
