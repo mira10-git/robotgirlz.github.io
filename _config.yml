@@ -1,15 +1,18 @@
 title: HYDROBOT
+
 email:
   - mira10@seas.upenn.edu
   - lubha@seas.upenn.edu
   - corobin@seas.upenn.edu
+
 description: Modern robotics, engineering and STEM projects.
 
 # GitHub Pages settings
 url: "https://mira10-git.github.io"
-baseurl: "/robotgirlz.github.io"   
+baseurl: "/robotgirlz.github.io"
 
-theme: jekyll-theme-cayman
-
+# Theme
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
-  - jekyll-feed
+  - jekyll-remote-theme
+
