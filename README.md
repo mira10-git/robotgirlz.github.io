@@ -41,10 +41,11 @@ Below is the video for the entire working of **HYDROBOT**
 # 6. Images
 
 The speaker fit to the case can be seen below:
-`<img src="https://github.com/user-attachments/assets/fe76689c-87b3-492b-8924-e1830d71ecfd" width="284" height="1712">`
+<p style="display: flex; justify-content: center; gap: 30px;">
+  <img src="images/Speaker_case.jpeg" width="310">
+</p>
 
 The LCD screen mounted on the case displaying 5 different modalities can be seen here:
-
 The below two images are bored (DND mode) and happy (default mode) -
 
 <p style="display: flex; justify-content: center; gap: 30px;">
@@ -61,18 +62,22 @@ The below three images are the other addiitonal modalities -
 </p>
 
 The temperature sensor placed inside the bottle cap can be viewed here:
-`<img src="images/tempinsidecap.jpeg" width="284" height="1712">`
+<p style="display: flex; justify-content: center; gap: 30px;">
+  <img src="images/tempinsidecap.jpeg" width="284">
+</p>
 
 The customised stacked up water level sensor can be seen below. The first image shows how it is placed inside the bottle and the second image gives a picture on the stacking of five different individual water level sensors to create a new long one:
-`<img src="images/Waterlevel_sensor1.jpeg" width="284" height="1712">`
-`<img src="images/Waterlevel_sensor2.png" width="105" height="912">`
+<p style="display: flex; justify-content: center; gap: 30px;">
+  <img src="images/Waterlevel_sensor1.jpeg" width="284">
+  `<img src="images/Waterlevel_sensor2.png" width="105">`
+</p>
 
 Below the interior of the mechanical casing can be seen. It has securely placed the ATmega328PB, the speaker and the breadboard along with all wirings. All the wires are color coded. They are also either tied together with heat shrink wraps, tape or zip ties:
 
 <p style="display: flex; justify-content: center; gap: 30px;">
   <img src="images/interiorcase1.jpeg" width="300">
   <img src="images/interiorcase2.jpeg" width="300">
-  <img src="images/zip_ties.jpeg.jpeg" width="300">
+  <img src="images/zip_ties.jpeg" width="300">
 </p>
 
 Below the exterior of the mechanical casing can be seen. The casing is spray painted with red color to match with the color of the breadboards used so that everything fits into a theme color:
@@ -85,7 +90,9 @@ Below the exterior of the mechanical casing can be seen. The casing is spray pai
 </p>
 
 Below the extended battery case taped up to the bottle can be viewed:  
-
+<p style="display: flex; justify-content: center; gap: 30px;">
+  <img src="images/batterypack.jpeg" width="284">
+</p>
 
 # 7. System Block Diagram
 
@@ -95,6 +102,10 @@ The image of the system block diagram can be seen below:
 # 9. Electrical
 
 Below is the diagram of the electrical schematic:
+<p style="display: flex; justify-content: center; gap: 30px;">
+  <img src="images/tempinsidecap.jpeg" width="734">
+</p>
+
 `<img width="734" height="633" alt="Updated Schematic" src="https://github.com/user-attachments/assets/00b5c368-4b01-4b8f-8d57-d7c6cf263b0b" />`
 
 # 10. Mechanical
