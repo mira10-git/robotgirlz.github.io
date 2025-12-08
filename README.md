@@ -58,13 +58,15 @@ The customised stacked up water level sensor can be seen below. The first image 
 ![alt text](images\Waterlevel_sensor2.png)
 
 Below the interior of the mechanical casing can be seen.
+![text](images/interiorcase1.jpeg) 
+![text](images/interiorcase2.jpeg)
 
 It has securely placed the ATmega328PB, the speaker and the breadboard along with all wirings:
 
 Below the exterior of the mechanical casing can be seen:
-
+![alt text](images/caseoutside.jpeg)
 Below the extended battery case taped up to the bottle can be viewed:
-
+![alt text](images/batterypack.jpeg)
 # 7. System Block Diagram
 
 The image of the system block diagram can be seen below:
@@ -205,7 +207,7 @@ https://docs.google.com/presentation/d/1IQ7ptsauxRLAOfhBziD9jSM5K8ZaqktJYuk62H05
 # 18. Timeline
 
 Below is a Gantt Chart that was followed throughout the project. All milestones were achieved as per deadlines by the team.
-`<img width="2074" height="933" alt="Gantt Chart 1" src="https://github.com/user-attachments/assets/177f7e83-c346-4b68-843c-78a4aff31d4a" />`
+`<img width="2074" height="933" alt="Gantt Chart 1" src="https://github.com/user-attachments/assets/177f7e83-c346-4b68-843c-> pre78a4aff31d4a" />`
 `<img width="2075" height="856" alt="Gantt Chart 2" src="https://github.com/user-attachments/assets/95cb1f24-ced2-4981-9888-e29c75c4f600" />`
 `<img width="2128" height="827" alt="Gantt Chart 4" src="https://github.com/user-attachments/assets/feaac036-15cf-4589-8c4f-f01e1b967844" />`
 `<img width="2136" height="951" alt="Gantt Chart 3" src="https://github.com/user-attachments/assets/f44e8db2-7284-43f6-ac57-f95e27c27168" />`
