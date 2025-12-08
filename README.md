@@ -64,7 +64,7 @@ Below the extended battery case taped up to the bottle can be viewed:
 # 7. System Block Diagram
 
 The image of the system block diagram can be seen below:
-
+![alt text](<WATERBOTTLE BLOCK DIAGRAMfinal.drawio.png>)
 
 # 8. Methodology
 
