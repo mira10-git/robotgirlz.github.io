@@ -44,7 +44,7 @@ Below is the video for the entire working of **HYDROBOT**
 
 The speaker fit to the case can be seen below:
 <p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/SpeakerCase.jpeg" width="310">
+  <img src="images/speakercase.jpeg" width="310">
 </p>
 
 The LCD screen mounted on the case displaying 5 different modalities can be seen here:
