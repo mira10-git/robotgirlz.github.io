@@ -38,7 +38,6 @@ This water bottle can be used by users of all age and gender as drinking water i
 Below is the video for the entire working of **HYDROBOT**  
 [![Demo](https://img.youtube.com/vi/l-nTQFhP8W4/0.jpg)](https://youtu.be/l-nTQFhP8W4)
 
-
 # 6. Images
 
 The speaker fit to the case can be seen below:  
@@ -46,13 +45,13 @@ The speaker fit to the case can be seen below:
 
 The LCD screen mounted on the case can be seen here displaying 5 different modalities can be seen there:
 <p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/wink.jpeg" width="250">
-  <img src="images/sad.jpeg" width="250">
-  <img src="images/angry.jpeg" width="250">
+  <img src="images/wink.jpeg" width="330">
+  <img src="images/sad.jpeg" width="330">
+  <img src="images/angry.jpeg" width="330">
 </p>
 
 <p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/LCD.jpg" width="700" height="1000">
+  <img src="images/LCD.jpg" width="740" height="1000">
   <img src="images/LCD - happy.png)" width="250">
 </p>
 
