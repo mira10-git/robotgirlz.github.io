@@ -93,7 +93,7 @@ The below image shows the final 3D printed model mounted on top of the bottle co
 
 # 11. Project Complexity
 
-Despite the seeming simplicity of a smart water bottle, our device is fairly complex, using 2 inputs and 2 outputs that all communicate with one another and the MCU in different ways. We made use of two types of serial communication, I2C and SPI, along with the ATmega328PB's Internal Analog to Digital converter. Additionally, we used an external audio processor to drive the speaker, that communicates with the ATmega328PB via GPIO.
+Despite the seeming simplicity of a smart water bottle, our device is fairly complex. It uses 2 inputs and 2 outputs that all communicate with one another and the MCU in different ways. We made use of two types of serial communication, I2C and SPI, along with the ATmega328PB's Internal Analog to Digital converter. Additionally, we used an external audio processor to drive the speaker, that communicates with the ATmega328PB via GPIO.
 
 # 12. Challenges
 
