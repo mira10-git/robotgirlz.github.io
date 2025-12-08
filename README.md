@@ -69,13 +69,15 @@ Below the interior of the mechanical casing can be seen. It has securely placed 
 <p style="display: flex; justify-content: center; gap: 30px;">
   <img src="images/interiorcase1.jpeg" width="300">
   <img src="images/interiorcase2.jpeg" width="300">
+  <img src="images/zip_ties.jpeg" width="300">
 </p>
 
 Below the exterior of the mechanical casing can be seen:  
 ![alt text](images/caseoutside.jpeg)
 
 Below the extended battery case taped up to the bottle can be viewed:  
-![alt text](images/batterypack.jpeg)
+<img src="images/batterypack.jpeg" width="284" height="1712">
+
 
 # 7. System Block Diagram
 
