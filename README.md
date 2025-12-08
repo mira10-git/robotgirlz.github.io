@@ -77,16 +77,16 @@ Below the interior of the mechanical casing can be seen. It has securely placed 
 <p style="display: flex; justify-content: center; gap: 30px;">
   <img src="images/interiorcase1.jpeg" width="300">
   <img src="images/interiorcase2.jpeg" width="300">
-  <img src="images/zipties.jpeg" width="300">
+  <img src="images/ziptiess.jpeg" width="300">
 </p>
 
 Below the exterior of the mechanical casing can be seen. The casing is spray painted with red color to match with the color of the breadboards used so that everything fits into a theme color:
 
 <p style="display: flex; justify-content: center; gap: 30px;">
   <img src="images/caseoutside.jpeg" width="225">
-  <img src="images/OuterCasing1.jpeg" width="225">
-  <img src="images/OuterCasing2.jpeg" width="225">
-  <img src="images/OuterCasing3.jpeg" width="225">
+  <img src="images/wholething1.jpeg" width="225">
+  <img src="images/wholething2.jpeg" width="225">
+  <img src="images/wholething3.jpeg" width="225">
 </p>
 
 Below the extended battery case taped up to the bottle can be viewed:  
