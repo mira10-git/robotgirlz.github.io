@@ -8,7 +8,7 @@
 
 # 1. Abstract
 
-This page is a brief of the working behind YOUR 'new hydration buddy' - HYROBOT. The bottle reminds the user to drink water if the water level in the bottle has not reduced every hour. It consists of an LCD which gives information such as water temperature and water level. The LCD has 5 different personality modes which can be switched by pressing the button. Along with the LCD, the bottle also has a speaker which gives the user auditory reminder for drinking water. The 5 different modes are: Happy, Sad, Angry, Sassy and Bored. If the user does not wish to have auditory interuptions, the bottle can be set to mode 5 (bored) which is the 'DO NOT DISTURB (DND)' mode. When the water temperature is below 30 °C, a blue LED lights up and when the water temperature is above 30°C, the red LED lights up.
+This page is a brief of the working behind your 'new hydration buddy' - HYROBOT. The bottle reminds the user to drink water if the water level in the bottle has not reduced every hour. It consists of an LCD which gives information such as water temperature and water level. The LCD has 5 different personality modes which can be switched by pressing the button. Along with the LCD, the bottle also has a speaker which gives the user auditory reminder for drinking water. The 5 different modes are: Happy, Sad, Angry, Sassy and Bored. If the user does not wish to have auditory interuptions, the bottle can be set to mode 5 (bored) which is the 'DO NOT DISTURB (DND)' mode. When the water temperature is below 30 °C, a blue LED lights up and when the water temperature is above 30°C, the red LED lights up.
 
 # 2. Motivation
 
@@ -39,17 +39,27 @@ https://drive.google.com/file/d/1J3wb_-LD5Ea_SrVyvrk9SyJ9oD1yoAxu/view?usp=share
 
 # 6. Images
 
-The speaaker fit to the case can be seen below:
-![Speaker_case](https://github.com/user-attachments/assets/9bbd5855-405d-4547-8ac6-8d922fced6c8)
+The speaker fit to the case can be seen below:
+
+![alt text](images\Speaker_case.jpeg)
 
 The LCD screen mounted on the case can be seen here displaying 5 different modalities can be seen there:
-![LCD](https://github.com/user-attachments/assets/3ec97cd0-d414-44a0-8bdf-1daf6f5ee1f0)
-`<img width="1050" height="850" alt="LCD - happy" src="https://github.com/user-attachments/assets/64ad1bbd-d2f0-4358-a85c-94094f36baa2" />`
+
+![alt text](images\LCD.jpg)
+
+![alt text](images\LCD - happy.png)
+
+The temperature sensor placed inside the bottle cap can be viewed here:
 
 The customised stacked up water level sensor can be seen below. The first image shows how it is placed inside the bottle and the second image gives a clear image on the stacking of 5 differet individual water level sensors to create a one long one:
-![Water level inside bottle](https://github.com/user-attachments/assets/06d42fd0-9a40-4c98-a7ae-98a8c051e9e1)
 
-Below the interior of the mechanical casing can be seen. It has securely placed the ATmega328PB, the speaker and the breadboard along with all wirings:
+![alt text](images\Waterlevel_sensor1.jpeg)
+
+![alt text](images\Waterlevel_sensor2.png)
+
+Below the interior of the mechanical casing can be seen.
+
+It has securely placed the ATmega328PB, the speaker and the breadboard along with all wirings:
 
 Below the exterior of the mechanical casing can be seen:
 
@@ -95,7 +105,7 @@ The team encountered various obstacles that were not anticipated:
 - The buck-boost converter was faulty and the linear regulator heated up quickly due to the larger step down voltage value.
 - There were multiple versions of the 3D design (that did not fit the purpose of the design) before the team finalised on a casing with apt form and function.
 
-# 13. Results 
+# 13. Results
 
 Our final result is that we created a bottle that gives regular reminders to drink water every hour depending on the water level inside the bottle, while also displaying the temperature of the water inside.
 
@@ -117,7 +127,6 @@ Our final result is that we created a bottle that gives regular reminders to dri
 
 ## 14.1 SOFTWARE REQUIREMENT SPECIFICATIONS
 
-
 Most of the software requirements were achieved. Values were received from the waterlevel sensor and temperature sensor. The audio files were plaing audible audio according to the display in the LCD which changed at every click of a button. There was an intial plan to diplay a string of color changing LEDs to show if the water was hot or cold. However, this was a tough software implementation as far as bare metal coding was concerned. It would have also added additional pressure on the memory use of ATmega328PB. So instead, a simplified logic of the same idea was deliberately use. Two individual blue and red LEDs were used that indicated temperature of the water. Only one of the software requirement was changed. From using a strip of LEDs that changes color to using two individual LEDs indicating red for hot water and blue for cold water. The reason this chnage was made was because it was much easier to implement code-wise and much efficient memory-wise.
 
 | *ID*     | *Description*                                                                                                                        | Validation Outcome                                                                                                                                                                                                                                                                                                                                                                     |
@@ -131,7 +140,6 @@ Most of the software requirements were achieved. Values were received from the w
 | *SRS-07* | The system shall log daily total water intake (number of refills) and reset the count at midnight or on power-cycle.                   | Unconfirmed. The size of our water bottle made this functionality unreasonable.                                                                                                                                                                                                                                                                                                        |
 
 ## 14.2 HARDWARE REQUIREMENT SPECIFICATIONS
-
 
 We were able to achieve most our hardware requirements, with some inoptimalities from our sensors. We wired the temperature sensor, customised water level sensor, speaker connected to the audio diver, LCD screen connected to 2 different colored LEDs and a button. For power, we used four 1.5V AA batteries that adds up to 6V. Them, used a linear voltage regulator to step down the voltage to 5V (which was the highest voltage required to power all components). This was then connected to ATmega328PB from where 5V input was delivered to the temperature sensor, LCD screen and speaker attached to the audio driver. The 3.3V input was used to operate the water level sensor. Our requirements did not change much at all. However, we did make slight changes in power regulation. Initially a single 9V battery was connected to a buck-boost convertor to step down voltage. However, the buck-boost convertor in the lab was faulty. This is when we switched to a linear voltage regulator. Since the step-down was from 9V to 5V, it heated up the voltage regulator quickly and it also seemed like a non-efficient set up. At this point, we switched to using four 1.5V batteries, which steps down voltage from 6V to 5V. This power setup was much more efficient and simpler than the earlier one.
 
@@ -206,7 +214,6 @@ https://docs.google.com/presentation/d/1BS_oT94HW1l447_tcnxJzq2WIQPKSj7Fw4KtnmdR
 
 Below is the link used for the Final Project Presentation:
 https://docs.google.com/presentation/d/1IQ7ptsauxRLAOfhBziD9jSM5K8ZaqktJYuk62H05T6E/edit?usp=share_link
-
 
 # 18. Timeline
 
