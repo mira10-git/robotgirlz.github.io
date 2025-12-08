@@ -214,3 +214,17 @@ Below is a Gantt Chart that was followed throughout the project. All milestones 
 `<img width="2136" height="951" alt="Gantt Chart 3" src="https://github.com/user-attachments/assets/f44e8db2-7284-43f6-ac57-f95e27c27168" />`
 
 # 19. References
+
+Below are all the datasheets that were used as references for the working of the project.
+
+Audio Driver:
+https://drive.google.com/file/d/1QlMNYdf2Et_ecabLgy2boJrilUhCZPAJ/view?usp=share_link
+
+LCD:
+https://drive.google.com/file/d/1TSAaAhcV6VfpOCJ3L3C6UGDC89guZD3E/view?usp=sharing
+
+Speaker with in-built amplifier:
+https://drive.google.com/file/d/1wQi7yzXNHPSx-Hg629KHsQ0qWIKia3_e/view?usp=sharing
+
+Temperature Sensor:
+https://drive.google.com/file/d/1fPWtl4aOOyst-5PTwyC-3pgUk2JZRs-c/view?usp=sharing
