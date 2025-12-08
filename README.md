@@ -233,7 +233,7 @@ Due to changes in our design we had to change a couple of our hardware requireme
 HRS-04 Display verification:
 
 <p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/HAPPY.jpeg" width="300">
+  <img src="images/LCD-happy.png" width="300">
 </p>
 
 Our final result is that we create a bottle that gives regular reminders to drink water every hour depending on the water level inside the bottle. We were able to create five different modes: Happy, Sad, Angry, Sassy and Bored. Each mode had a color coded emoji and information display on the LCD. The LCD diplayed information such as the temperature of the bottle and water level. When the temperature of the bottle is >35, the red LED would lit up indicating that the water is hot. Similarily, when the temperature of the bottle id <35, the blue LED would lit up, signifying the water is colder in temperature. Additionally, a speaker with in-built amplifier was used so that the reminder was not only visual but also auditory. These audios were customised in accordance to each personality modes. Since, there are both visual and auditory reminders, this bottle can be additionally helpful for both deaf and blind people. The last mode (bored) is a 'DO NOT DISTURB' mode which means, the speaker will not be playing anything at that time. This mode can be taken advantage of when the user is in public place and do not prefer to be disturbed woth load noices. These personality modes can be changed at a click of a button.
