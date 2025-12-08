@@ -44,37 +44,42 @@ The speaker fit to the case can be seen below:
 <img src="https://github.com/user-attachments/assets/fe76689c-87b3-492b-8924-e1830d71ecfd" width="284" height="1712">
 
 The LCD screen mounted on the case can be seen here displaying 5 different modalities can be seen there:
+
+The below two images are bored (DND mode) and happy (default mode)
+<p style="display: flex; justify-content: center; gap: 30px;">
+  <img src="images/LCD.jpg" width="680" height="1000">
+  <img src="images/LCD_happy.png" width="310">
+</p>
+
+The below three images are the other addiitonal modalities
 <p style="display: flex; justify-content: center; gap: 30px;">
   <img src="images/wink.jpeg" width="330">
   <img src="images/sad.jpeg" width="330">
   <img src="images/angry.jpeg" width="330">
 </p>
 
+The temperature sensor placed inside the bottle cap can be viewed here:  
+<img src="images/tempinsidecap.jpeg" width="284" height="1712">
+
+The customised stacked up water level sensor can be seen below. The first image shows how it is placed inside the bottle and the second image gives a clear image on the stacking of 5 different individual water level sensors to create a one long one:  
+<img src="images/Waterlevel_sensor1.jpeg" width="284" height="1712">
+<img src="images/Waterlevel_sensor2.png" width="105" height="912">
+
+Below the interior of the mechanical casing can be seen. It has securely placed the ATmega328PB, the speaker and the breadboard along with all wirings. All the wires are color coded. They are also either tied together with heat shrink wraps, tape or zip ties:
 <p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/LCD.jpg" width="740" height="1000">
-  <img src="images/LCD - happy.png)" width="250">
+  <img src="images/interiorcase1.jpeg" width="300">
+  <img src="images/interiorcase2.jpeg" width="300">
 </p>
 
-The temperature sensor placed inside the bottle cap can be viewed here:
-![alt text](images/tempinsidecap.jpeg)
-
-The customised stacked up water level sensor can be seen below. The first image shows how it is placed inside the bottle and the second image gives a clear image on the stacking of 5 differet individual water level sensors to create a one long one:
-![alt text](images\Waterlevel_sensor1.jpeg)
-![alt text](images\Waterlevel_sensor2.png)
-
-Below the interior of the mechanical casing can be seenIt has securely placed the ATmega328PB, the speaker and the breadboard along with all wirings:
-![text](images/interiorcase1.jpeg)
-![text](images/interiorcase2.jpeg)
-
-Below the exterior of the mechanical casing can be seen:
+Below the exterior of the mechanical casing can be seen:  
 ![alt text](images/caseoutside.jpeg)
 
-Below the extended battery case taped up to the bottle can be viewed:
+Below the extended battery case taped up to the bottle can be viewed:  
 ![alt text](images/batterypack.jpeg)
 
 # 7. System Block Diagram
 
-The image of the system block diagram can be seen below:
+The image of the system block diagram can be seen below:  
 ![alt text](images/WATERBOTTLE%20BLOCK%20DIAGRAM.drawio.png)
 
 # 9. Electrical
