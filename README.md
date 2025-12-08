@@ -75,6 +75,7 @@ The image of the system block diagram can be seen below:
 # 9. Electrical
 
 Below is the diagram of the electrical schematic:
+<img width="734" height="633" alt="Updated Schematic" src="https://github.com/user-attachments/assets/00b5c368-4b01-4b8f-8d57-d7c6cf263b0b" />
 
 # 10. Mechanical
 
