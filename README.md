@@ -102,15 +102,16 @@ Below the extended battery case taped up to the bottle can be viewed:
 # 7. System Block Diagram
 
 The image of the system block diagram can be seen below:
-<p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/BLOCK DIAGRAM" width="500">
-</p>
+
+![alt text](<images/WATERBOTTLE BLOCK DIAGRAMfinal.drawio.png>)
 
 # 8. Electrical
 
 Below is the diagram of the electrical schematic:
-![alt text](<images/WATERBOTTLE BLOCK DIAGRAMfinal.drawio.png>)
 
+<p style="display: flex; justify-content: center; gap: 30px;">
+  <img src="images/UpdatedSchematic.png" width="734">
+</p>
 
 # 9. Mechanical
 
