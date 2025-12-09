@@ -1,10 +1,8 @@
-# HYDROBOT
-
-* Team Name: RobotGirlz
-* Team Members: Mira Sivaprasad, Catie Robinson, Lubha Churiwala
-* Github Repository URL: https://github.com/upenn-embedded/final-project-f25-f25-final_project_robotgirlz.git
-* Github Pages Website URL: https://mira10-git.github.io/robotgirlz.github.io/
-* Description of hardware: ATmega328PB, MLX90632 FIR temperature sensor, LCD screen, Stemma speaker with audio amplifier, High sensitivity water level sensor, Audio FX Mini Sound Board, Linear Voltage regulator, Red and Blue LED lights
+* **Team Name:** RobotGirlz
+* **Team Members:** Mira Sivaprasad, Catie Robinson, Lubha Churiwala
+* **Github Repository URL:** https://github.com/upenn-embedded/final-project-f25-f25-final_project_robotgirlz.git
+* **Github Pages Website URL:** https://mira10-git.github.io/robotgirlz.github.io/
+* **Description of Hardware:** ATmega328PB, MLX90632 FIR temperature sensor, LCD screen, Stemma speaker with audio amplifier, High sensitivity water level sensor, Audio FX Mini Sound Board, Linear Voltage regulator, Red and Blue LED lights
 
 # 1. Abstract
 
@@ -115,6 +113,11 @@ Below is the diagram of the electrical schematic:
 </p>
 
 # 10. Mechanical
+
+Below are the initial drawings of the bottle model. This initial design did undergo multiple changes before we finalized on the final design.
+<p style="display: flex; justify-content: center; gap: 30px;">
+  <img src="images/DifferentViews.jpeg" width="405">
+</p>
 
 Below are the 3D designs created on Fusion 360 that were used for 3D printing from the RPL lab:
 <p style="display: flex; justify-content: center; gap: 30px;">
@@ -276,13 +279,16 @@ https://docs.google.com/presentation/d/1IQ7ptsauxRLAOfhBziD9jSM5K8ZaqktJYuk62H05
 
 Below is a Gantt Chart that was followed throughout the project. All milestones were achieved as per deadlines by the team.
 <p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/GanttChart1.png" width="800">
-  <img src="images/GanttChart2.png" width="800">
+  <img src="images/GanttChart1.png" width="900">
 </p>
-
 <p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/GanttChart3.png" width="800">
-  <img src="images/GanttChart4.png" width="800">
+  <img src="images/GanttChart2.png" width="900">
+</p>
+<p style="display: flex; justify-content: center; gap: 30px;">
+  <img src="images/GanttChart3.png" width="900">
+</p>
+<p style="display: flex; justify-content: center; gap: 30px;">
+  <img src="images/GanttChart4.png" width="900">
 </p>
 
 # 19. References
