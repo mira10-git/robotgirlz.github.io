@@ -171,7 +171,7 @@ Due to the above challenges along with many other factors like time and feasibil
 
 # 12. Results
 
-The final result is that a bottle that gives regular reminders to drink water every hour depending on the water level inside the bottle, while also displaying the temperature of the water inside was created. The details of its features are as follows:
+The final result is that a bottle that gives regular reminders to drink water every hour depending on the water level inside the bottle, while also displaying the temperature of the water inside was created. The firmware implmentation of these functionalities is available in the GitHub repository linked above. The details of device's features are as follows:
 
 * Temperature sensor -
   1. The device consistently measures the temperature using an infrared object temperature sensor operating in its extended range, that communicates to the MCU through I2C.
@@ -185,6 +185,7 @@ The final result is that a bottle that gives regular reminders to drink water ev
   1. Five different personality modes were created: Happy, Sad, Angry, Sassy and Bored.
   2. Additionally, a speaker with an in-built amplifier was used so that the reminder was not only visual but also auditory. These audios were customised in accordance to each personality modes and saved into the Audio FX Mini Sound Board.
   3. The last mode (bored) is a 'DO NOT DISTURB' mode which means the speaker will not be playing anything when in that mode. This mode can be taken advantage of when the user is in public place and do not prefer to be disturbed with loud noices. These personality modes can be changed at a click of a button.
+
 
 # 13. Specification Results
 
