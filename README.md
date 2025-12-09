@@ -130,7 +130,7 @@ Below are the 3D designs created on Fusion 360 that were used for 3D printing fr
 
 Below is an image of the 3D printed case before any changes were made to the model:
 <p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/RawCase.png" width="405">
+  <img src="images/RawCase.png" width="355">
 </p>
 
 Before the case was spray painted, some design changes were made by cutting certain sections off the case (due to size constraints) from the Garage Lab using a Uni-point Radial Arm Saw. Below is an image of both the case for electrical components and battery case spray painted from the Venture Lab:
