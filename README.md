@@ -109,9 +109,8 @@ The image of the system block diagram can be seen below:
 # 8. Electrical
 
 Below is the diagram of the electrical schematic:
-<p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/UpdatedSchematic.png" width="734">
-</p>
+![alt text](<images/WATERBOTTLE BLOCK DIAGRAMfinal.drawio.png>)
+
 
 # 9. Mechanical
 
