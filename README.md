@@ -34,8 +34,6 @@ This water bottle can be used by users of all age and gender as drinking water i
 # 5. Video
 
 Below is the video for the entire working of **HYDROBOT**
-
-
 [![Demo](https://img.youtube.com/vi/l-nTQFhP8W4/0.jpg)](https://youtu.be/l-nTQFhP8W4)
 
 # 6. Images
@@ -105,14 +103,14 @@ Below the extended battery case taped up to the bottle can be viewed:
 The image of the system block diagram can be seen below:
 ![alt text](images/WATERBOTTLE%20BLOCK%20DIAGRAM.drawio.png)
 
-# 9. Electrical
+# 8. Electrical
 
 Below is the diagram of the electrical schematic:
 <p style="display: flex; justify-content: center; gap: 30px;">
   <img src="images/UpdatedSchematic.png" width="734">
 </p>
 
-# 10. Mechanical
+# 9. Mechanical
 
 Below are the initial drawings of the bottle model. This initial design did undergo multiple changes before we finalized on the final design.
 <p style="display: flex; justify-content: center; gap: 30px;">
@@ -145,11 +143,11 @@ The below image shows the final 3D printed model mounted on top of the bottle co
   <img src="images/MountedModel.png" width="467">
 </p>
 
-# 11. Project Complexity
+# 10. Project Complexity
 
 Despite the seeming simplicity of a smart water bottle, this device was fairly complex to implement. It uses two inputs and two outputs, that all communicate with one another and the MCU in different ways. Two types of serial communication: I2C and SPI, were used along with the ATmega328PB's internal analog to digital converter. Additionally, an external audio processor to drive the speaker that communicates with the ATmega328PB via GPIO was used.
 
-# 12. Challenges
+# 11. Challenges
 
 The team encountered many obstacles that were not anticipated:
 
@@ -171,7 +169,7 @@ Due to the above challenges along with many other factors like time and feasibil
   3. After these, the team looked into how typical resistive water level sensors operated. These sensor options were avoided during the initial proposal because of their size (either being too big to fit in the initial bottle choice or too short for the length of the bottle). The multiple options looked into includes: a load sensor that communicated through I2C, two homemade water level sensor deisgns and two in-factory made water level sensor.
   4. The final option was considered the best for this project since it had the most consistent behavior that could be implemented in the remaining time. It took more effort than anticipated, but eventually it worked such that it would return values reasonable for the set up.
 
-# 13. Results
+# 12. Results
 
 The final result is that a bottle that gives regular reminders to drink water every hour depending on the water level inside the bottle, while also displaying the temperature of the water inside was created. The details of its features are as follows:
 
@@ -188,9 +186,9 @@ The final result is that a bottle that gives regular reminders to drink water ev
   2. Additionally, a speaker with an in-built amplifier was used so that the reminder was not only visual but also auditory. These audios were customised in accordance to each personality modes and saved into the Audio FX Mini Sound Board.
   3. The last mode (bored) is a 'DO NOT DISTURB' mode which means the speaker will not be playing anything when in that mode. This mode can be taken advantage of when the user is in public place and do not prefer to be disturbed with loud noices. These personality modes can be changed at a click of a button.
 
-# 14. Specification Results
+# 13. Specification Results
 
-## 14.1 SOFTWARE REQUIREMENT SPECIFICATIONS
+## 13.1 SOFTWARE REQUIREMENT SPECIFICATIONS
 
 Most of the software requirements were achieved. Values were received from the waterlevel sensor and temperature sensor. The audio files were playing audible audio according to the display in the LCD which changed at every click of a button. There was an intial plan to diplay a string of color changing LEDs to show if the water was hot or cold. However, this was a tough software implementation as far as bare metal coding was concerned. It would have also added additional pressure on the memory use of ATmega328PB. So instead, a simplified logic of the same idea was deliberately used. Two individual blue and red LEDs were used that indicated temperature of the water. Only one of the software requirement was changed. From using a strip of LEDs that changes color to using two individual LEDs indicating red for hot water and blue for cold water. The reason this chnage was made was because it was much easier to implement code-wise and much efficient memory-wise.
 
@@ -205,41 +203,44 @@ Most of the software requirements were achieved. Values were received from the w
 | *SRS-07*                         | The system shall log daily total water intake (number of refills) and reset the count at midnight or on power-cycle.                   | The size of our water bottle made this functionality unreasonable.                                                      |
 
 
-### SRS images:
-SRS-01: Temperature timing verification 
+### SRS verifications:
+SRS-01: Temperature timing image
 <p style="display: flex; justify-content: center; gap: 30px;">
   <img src="images/tempmeasurements taken in under a seond.png" width="405">
 </p>
 
 
-SRS-04: Audio timing verification 
+SRS-04: Audio timing image
 <p style="display: flex; justify-content: center; gap: 30px;">
   <img src="images/audiotiming.jpeg" width="405">
 </p>
 
-## 14.2 HARDWARE REQUIREMENT SPECIFICATIONS
+## 13.2 HARDWARE REQUIREMENT SPECIFICATIONS
 
 Due to changes in our design we had to change a couple of our hardware requirements. Namely, the water level detection mechanism changed from a distance sensor configuration to a resistive waterlevel sensor, and so the hardware requirement was updated to reflect this. Most of the updated hardware requirements were achieved, with some inoptimalities from the sensors. The temperature sensor were wired, water level sensor customised, speaker connected to the audio diver, LCD screen connected to two different colored LEDs and a button. However, there were slight changes made in power regulation. Initially a single 9V battery was connected to a buck-boost convertor to step down voltage. However, the buck-boost convertor in the lab was faulty. This is when four 1.5V AA batteries that adds up to 6V were used. Them, a linear voltage regulator was used to step down the voltage to 5V (which was the highest voltage required to power all components). This was then connected to ATmega328PB from where 5V input was delivered to the temperature sensor, LCD screen and speaker attached to the audio driver. The 3.3V input was used to operate the water level sensor. This power setup was much more efficient and simpler than the earlier one. Another significant change made was to switch from ultrasonic/ToF distance sensor to water level sensor to measure the water level
 
 | ID     | Description                                                                                                                                                                                                           | Validation outcome                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| HRS-01 | A water level sensor shall operate detect levels from 0 mL (empty) to 1900mL (full) with a resolution of 1mL.                                                                                                         | A cascade of resistive waterlevel sensors ( linked here:[Adafruit water level sensor](https://www.adafruit.com/product/4965) were used and detected the water level from 0 mL to 1900 mL with an accuracy of +- 100mL, with higher quality reported values at higher volumes. This is suboptimal perfomance due to the varying floating charge that exists on the water level sensors that are not in use (wet) at a given time. |
+| HRS-01 | A water level sensor shall operate detect levels from 0 mL (empty) to 1900mL (full) with a resolution of 1mL.                                                                                                         | A cascade of resistive waterlevel sensors (linked here: [Adafruit water level sensor](https://www.adafruit.com/product/4965) were used and detected the water level from 0 mL to 1900 mL with an accuracy of +- 100mL, with higher quality reported values at higher volumes. This is suboptimal perfomance due to the varying floating charge that exists on the water level sensors that are not in use (wet) at a given time. |
 | HRS-02 | A temperature sensor shall measure water temperature in the range of 0 °C - 60 °C with an accuracy of +- 1 °C. Validation: It should be able to measure the temperature of water without being in contact with it. | The temperature sensor accurately measures the temeprature of the water from 0°C - 40 °C. At hot temperatures the steam in the bottle clouds the sensor, blocking it from reading the water itself.                                                                                                                                                                                                                             |
-| HRS-03 | A speaker shall emit an audible alert of at least 60 dB.                                                                                                                                                              | The reminder is audible! The video showing it is linked [HERE](https://drive.google.com/file/d/1J0r5pW3tcm9OyD_Lxg-Te3hnU0jG54t8/view?usp=sharing)                                                                                                                                                                                                                                                                                                                                           |
+| HRS-03 | A speaker shall emit an audible alert of at least 60 dB.                                                                                                                                                              | The reminder is audible!                                                                                                                                                                                                                                                                                                  |
 | HRS-04 | A bright display shall display water temperature and amount of water drank legibly under typical indoor lighting                                                                                                      | The screen is bright and visible. The image confirming this can be seen below.                                                                                                                                                                                                                                                                                                                                   |
 | HRS-05 | ATMega328PB should operate within its specified voltage range, that is 3.3 V-5V. It should be able to send display signals to the display screen via SPI.                                                             | The ATmega is able to operate this way via battery power                                                                                                                                                                                                                                                                                                                                                                             |
 | HRS-06 | Power supply should be suffient to run the peripherals (temperature sensor, water level sensor, display screen, ATMega328PB) continuously without interruption for atleast 4 hours.                                   | The system was left on for an afternoon and still operated normally throughout.                                                                                                                                                                                                                                                                                                                                                      |
 | HRS-07 | Water bottle should be able to withstand both hot water (up to 60°C) and cold water (till 0°C) without deformation or leakage.                                                       | The water bottle is plastic, but its still able to withstand the range of water temperature.                                                                                                                                                                                                                                                                                                                                       |
 
 
-### HRS images 
-HRS-04 Display verification:
+### HRS verification 
 
+HRS-03 Reminder Audio
+The video showing the audio reminder is linked [HERE](https://drive.google.com/file/d/1J0r5pW3tcm9OyD_Lxg-Te3hnU0jG54t8/view?usp=sharing) 
+
+HRS-04 Display images:
 <p style="display: flex; justify-content: center; gap: 30px;">
   <img src="images/LCD-happy.png" width="300">
-</p>
+</p>                                      
 
-# 16. Future Improvements
+# 14. Future Improvements
 
 There could be multiple improvements to this project:
 
@@ -250,19 +251,22 @@ There could be multiple improvements to this project:
 - The LED strips could be further implemented, as it does not only display two colors, but a range of red/blue could be shown as the temperature varied.
 - A switch to power on the device could be implemented to avoid the delicate process of of plugging and unplugging wires every time the device is turned on.
 
-# 17. Reflection and Conclusions
+# 15. Reflection and Conclusions
 
 * **What did you learn from it?**  
-From this project, we got a wholistic view of the development process of an embedded system prototype. From planning out desired functions and building bill of materials, to testing individual components and final integration, this project expanded upon what we learned in ESE 5190's worksheets and labs, giving us one specific design where we had to implement everything we'd been learning about from scratch. Learning how to navigate multiple datasheets for desired information, write code for I2C communication for a device, find the necessary initializations for desired implementation, set up a linear regulatior, and how putting all these pieces together affected entire system operation, was all necessary for the succesful operation of our final design.
-  We also gained experience with the arduous debugging process, isolating each component one by one. This is a very important skill for when we are working in the industry as most of the times, the components that work fine individually, stop working during integration and so, finding the root cause of the issue is a very complex problem. The project gave us hands on experience with bare metal coding, which one of our team members had had little to no experience with before. We learned individually about the intricacies of each main component: the temperature sensor, water level sensor, LCD screen and speaker and audio driver and how to integrate these together using ATmega328PB. We also got some experience in 3D designing and 3D printing.
+From this project, the team got a wholistic view of the development process of an embedded system prototype. From planning out desired functions and building the bill of materials, to testing individual components and final integration, this project expanded upon what was in the course assignments of ESE 5190, giving one specific design where all of the learned materials were implemented from scratch. Learning how to navigate multiple datasheets for desired information, writing code for I2C communication for a device, finding the necessary initializations for desired implementation, setting up a linear regulatior and how putting all these pieces together affecting the entire system operation, was all that was necessary for the succesful operation of the final design.
+The team also gained experience with the arduous debugging process, isolating each component one by one. This is a very important skill for working in the industry as most of the times, the components that work fine individually, stop working during integration and so, finding the root cause of the issue is a very complex problem. The project gave us hands on experience with bare metal coding, in which some of our team members had little to no experience with before. The team learned individually about the intricacies of each main component: the temperature sensor, water level sensor, LCD screen, speaker, audio driver and how to integrate these together using ATmega328PB. The team also gained some experience in 3D designing, 3D printing and fabrication.
+  
 * **What went well?**  
-Many aspects of our project went well. Most notably the speaker with an in-built amplifier attached to the audio driver worked very well. There were no complications during any of the testing sessions and the audio were quite audible clearly differentiating between four different personality mode voices. Additionally, though it was the first part to be affected by integration bugs, the LCD screen also consistently displayed the information reported from the ATmega, giving us a clear place to look to see if there was an issue. If the code was hung up, we could see the LCD freeze, if a sensor wasn't working right we could see the garbage value on display, or if a button wasn't debouncing properly we could see the effect directly. This really helped with the debugging process.
-* **What accomplishments are you proud of?**  
-We were particularily proud of implementing the temperature sensor. Since it communicated through I2C,it required a lot of firmware implementation specific to the part itself. It took a lot of time to research, write code for, and test the necessary initializations, calibrations, and measurement start parameters, along with the firmware required to turn the raw data from the sensor into information that was interpretable. The temperature sensor took to most time to intergate with other parts, because the lack of an expected acknowledgement from the peripheral would hang up the entire application function. It was very rewarding when we figured out what was going on and got everything to work (code will get hung up waiting for an ACK if we did not have our I2C peripherals plugged in). Aside from the temperature sensor, finally putting everything together was very exciting even if it did take significant time and effort. The working of the entire project felt worth the effort.
-* **What did you learn/gain from this experience?**  
-In addition to the general practice applying what we learned in the course, we also learned how executing a project like this takes a lot of time, trial and error, testing, and adapting and overcoming the inevitable obstacles along the way. We learnt how we can approach the same problem in multiple ways. For example, we tried many different methods to measure the level of the water inside the bottle. This showed us that it is okay not to be stuck if the original plan did not work out, and that we can improvise when needed.
+Many aspects of our project went quite well. Most notably the speaker with an in-built amplifier attached to the audio driver worked very well. There were no complications during any of the testing sessions and the audio were quite audible, clearly differentiating between four different personality mode voices. Additionally, though it was the first part to be affected by integration bugs, the LCD screen consistently displayed the information reported from the ATmega328PB, giving a clear place to look to see if there was an issue. If the code was hung up, the LCD screen froze. If a sensor wasn't working right, the garbage value could be seen on display or if a button was not debouncing properly the effect could be seen directly. This really helped with the debugging process.
 
-# 18. Project Proposal Presentation
+* **What accomplishments are you proud of?**  
+The team was particularily proud of implementing the temperature sensor. Since it communicated through I2C, it required a lot of firmware implementation specific to the part itself. It took a lot of time to research, write code for as well as test the necessary initializations, calibrations and measurement start parameters, along with the firmware required to turn the raw data from the sensor into information that was interpretable. The temperature sensor took the most time to intergate with other parts, because the lack of an expected acknowledgement from the peripheral would hang up the entire application function. It was very rewarding when it the team figured what was going on and got everything to work (code got hung up waiting for an ACK if the I2C peripherals were not plugged in). Aside from the temperature sensor, finally putting everything together was very exciting even if it did take significant time and effort. The working of the entire project felt worth the effort!!!
+
+* **What did you learn/gain from this experience?**  
+In addition to the general practice, the team learned how executing a project like this takes a lot of time, trial and error, testing, adapting and overcoming the inevitable obstacles along the way. The team learned to approach the same problem in multiple ways. For example, many different methods were tried and tested to measure the level of the water inside the bottle. This showed that it is okay not to be stuck if the original plan did not work out and that one must improvise when needed.
+
+# 16. Project Proposal Presentation
 
 Below is the link used for the Project Proposal Presentation:
 https://docs.google.com/presentation/d/1BS_oT94HW1l447_tcnxJzq2WIQPKSj7Fw4KtnmdRAFw/edit?usp=sharing
@@ -270,23 +274,23 @@ https://docs.google.com/presentation/d/1BS_oT94HW1l447_tcnxJzq2WIQPKSj7Fw4KtnmdR
 Below is the link used for the Final Project Presentation:
 https://docs.google.com/presentation/d/1IQ7ptsauxRLAOfhBziD9jSM5K8ZaqktJYuk62H05T6E/edit?usp=share_link
 
-# 18. Timeline
+# 17. Timeline
 
 Below is a Gantt Chart that was followed throughout the project. All milestones were achieved as per deadlines by the team.
 <p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/GanttChart1.png" width="900">
+  <img src="images/GanttChart1.png" width="1000">
 </p>
 <p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/GanttChart2.png" width="900">
+  <img src="images/GanttChart2.png" width="1000">
 </p>
 <p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/GanttChart3.png" width="900">
+  <img src="images/GanttChart3.png" width="1000">
 </p>
 <p style="display: flex; justify-content: center; gap: 30px;">
-  <img src="images/GanttChart4.png" width="900">
+  <img src="images/GanttChart4.png" width="1000">
 </p>
 
-# 19. References
+# 18. References
 
 Below are all the datasheets that were used as references for the working of the project.
 
@@ -301,3 +305,5 @@ https://drive.google.com/file/d/1wQi7yzXNHPSx-Hg629KHsQ0qWIKia3_e/view?usp=shari
 
 Temperature Sensor:
 https://drive.google.com/file/d/1fPWtl4aOOyst-5PTwyC-3pgUk2JZRs-c/view?usp=sharing
+
+
